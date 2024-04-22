@@ -8,7 +8,7 @@ body{
     display: flex;
 }
 #outer-box{
-    height: 200vw;
+    height: fit-content;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ body{
 
 #middle-box{
     margin: 0.5vh;
-    height: 90%;
+    height: fit-content;
 }
 .d-aside{
     display: inline-block;
@@ -65,10 +65,9 @@ body{
 
 .box-heading{
     margin: 1vh;
-    height: 10%;
 }
 #f-box{
-    height: 86%;
+    height: 80%;
     margin: 1vh;
     justify-content: space-between;
 }
@@ -78,6 +77,45 @@ body{
     margin-bottom: 1vh;
 }
 
+#middle-three{
+    margin-top: 0.5vh;
+    height: 20vh;
+    margin-bottom: 1vh;
+}
+
+#circlebox{
+    width: 99%;
+    margin: 0.5vh;
+    height: 14vh;
+    justify-content: space-between;
+}
+#circleboxt{
+    width: 99%;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.artist-box{
+    width: 15vh;
+    border-radius: 50%;
+    height: inherit;
+}
+.genre-box{
+    width: 10vh;
+    border-radius: 50%;
+}
+#middle-five{
+    height: 20vh;
+    justify-content: space-between;
+}
+.b-5{
+    height: 15vh;
+    justify-content: space-between;
+    margin-bottom: 0.5vh;
+}
+.e-b{
+    width: 17.5%;
+}
 /* right-section */
 
 #right-section{
