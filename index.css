@@ -14,6 +14,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+#upper-box{
+    display: flex;
+}
 .bar{
     margin: 0.5vh;
     height: 7.5vh;
@@ -32,8 +35,31 @@ body{
 }
 #favourite-text{
     margin-left: 5vw;
-    
 }
+#right-items{
+    position: relative;
+    left: 58%;
+    width:25%;
+    align-items:center;
+    justify-content: space-between;
+}
+#pill{
+    border-radius: 0.8rem;
+    height:60%;
+    width:60%;
+    justify-content: space-around;
+}
+#profile{
+    border-radius: 50%;
+    height: 70%;
+    width: 2.75em;
+}
+input[type="text"]{
+    width: 60%;
+}
+
+
+
 /* Middle box */
 
 
@@ -165,12 +191,44 @@ li{
     justify-content: space-around;
 }
 #left-box{
-    width: 10vw;
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
 }
 #midle-box{
     width: 40vw;
-
+    align-items: center;
+    flex-direction: column;
 }
 #right-box{
-    width: 10vw;
+    width: 20%;
+    align-items: center;
+}
+#display-box{
+    height:60%;
+    width:25%;
+}
+#upper-part, #lower-part{
+    width:100%;
+    height: 50%;
+}
+#upper-part{
+    justify-content: center;
+}
+.control-icons{
+    margin: 0 2%;
+}
+#lower-part{
+    justify-content: space-between;
+    padding: 1%;
+    box-sizing: border-box;
+}
+#music-player{
+    width:80%;
+}
+.music-controls{
+    margin: 0 5%;
+}
+#volume{
+    width:50%;
 }
