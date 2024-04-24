@@ -22,6 +22,7 @@ body{
     border-radius: 50%;
     margin-left: 5vw;
     width: 4.5vw;
+    height:inherit;
 }
 .text{
     display: flex;
@@ -139,10 +140,24 @@ body{
     margin-top: 2vh;
 
 }
-.queue-box{
-    height: 5vh;
-    justify-content:space-between
+li{
+    justify-content: space-between;
     align-items: center;
+    margin: 2vh;
+}
+.song-box{
+    height:5vh;
+    width:5vh;
+}
+.song-text{
+    position:relative;
+    right: 11vh;
+}
+.heart{
+    position: relative;
+    right: 1vw;
+    height: 3vh;
+    width: 2vw;
 }
 
 /* Lower bar */
