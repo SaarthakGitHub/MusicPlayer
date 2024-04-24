@@ -1,0 +1,152 @@
+.box{
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+
+}
+.d-flex{
+    display: flex;
+}
+#outer-box{
+    height: fit-content;
+    width: 99.5vw;
+    display: flex;
+    flex-direction: column;
+}
+#upper-box{
+    display: flex;
+}
+.bar{
+    margin: 0.5vh;
+    height: 7.5vh;
+}
+#logo{
+    border-radius: 50%;
+    margin-left: 5vw;
+    width: 4.5vw;
+    height:inherit;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+}
+#favourite-text{
+    margin-left: 5vw;
+}
+#right-items{
+    position: relative;
+    left: 58%;
+    width:25%;
+    align-items:center;
+    justify-content: space-between;
+}
+#pill{
+    border-radius: 0.8rem;
+    height:60%;
+    width:60%;
+    justify-content: space-around;
+}
+#profile{
+    border-radius: 50%;
+    height: 70%;
+    width: 2.75em;
+}
+input[type="text"]{
+    width: 60%;
+}
+
+
+
+/* Middle section */
+
+
+
+#middle-box{
+    margin: 0.5vh;
+    height: fit-content;
+}
+#left-section{
+    width: 70%;
+}
+#right-section{
+    width: 29%;
+}
+.d-aside{
+    display: inline-block;
+    vertical-align: top;
+}
+#artist-display{
+    height: 40vh;
+}
+#artist-image{
+    width: 45%;
+}
+#artist-description{
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+}
+#artist-inner-box{
+    height:80%;
+    width:80%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#song-dec{
+    justify-content: space-between;
+}
+
+
+
+/* Lower box */
+
+
+
+#lower-box{
+    justify-content: space-around;
+}
+#left-box{
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
+}
+#midle-box{
+    width: 40vw;
+    align-items: center;
+    flex-direction: column;
+}
+#right-box{
+    width: 20%;
+    align-items: center;
+}
+#display-box{
+    height:60%;
+    width:25%;
+}
+#upper-part, #lower-part{
+    width:100%;
+    height: 50%;
+}
+#upper-part{
+    justify-content: center;
+}
+.control-icons{
+    margin: 0 2%;
+}
+#lower-part{
+    justify-content: space-between;
+    padding: 1%;
+    box-sizing: border-box;
+}
+#music-player{
+    width:80%;
+}
+.music-controls{
+    margin: 0 5%;
+}
+#volume{
+    width:50%;
+}
