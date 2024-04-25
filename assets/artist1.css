@@ -98,6 +98,25 @@ input[type="text"]{
 #song-dec{
     justify-content: space-between;
 }
+li{
+    margin-top: 1%; 
+}
+
+/* Right panel */
+#right-section{
+    height: 80vh;
+}
+#upper-aside, #lower-aside{
+    height: 47%; 
+}
+#upper-aside{
+    margin-bottom: 2%;
+}
+
+#right-panel-heading{
+    margin-top: 1%;
+    height: 15%;
+}
 
 
 
