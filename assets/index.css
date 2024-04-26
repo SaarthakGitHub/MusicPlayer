@@ -1,5 +1,7 @@
 .box{
-    border: 1px solid black;
+    border: 1px solid white;
+    background-color: rgba(12,16,39,255);
+    color: white;
 }
 body{
     margin: 0;
@@ -20,34 +22,56 @@ body{
 .bar{
     margin: 0.5vh;
     height: 7.5vh;
+    width: 98vw;
 }
 #logo{
     border-radius: 50%;
     margin-left: 5vw;
     width: 4.5vw;
     height:inherit;
+    justify-content: center;
+    align-items: center;
+}
+#logo i{
+    font-size: 225%;
+    color: white;
+}
+#app-name{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .text{
     display: flex;
     justify-content: center;
     align-items: center;
     width:fit-content;
+    background-color: transparent;
 }
 #favourite-text{
     margin-left: 5vw;
 }
 #right-items{
     position: relative;
-    left: 58%;
+    left: 49vw;
     width:25%;
     align-items:center;
     justify-content: space-between;
 }
 #pill{
+    box-sizing: border-box;
     border-radius: 0.8rem;
     height:60%;
-    width:60%;
-    justify-content: space-around;
+    width: 50%;
+    padding-left:1%;
+}
+#pill i{
+    color: white;
+}
+input{
+    background-color: transparent;
+    border: none;
+    height: 85%;
 }
 #profile{
     border-radius: 50%;
@@ -92,6 +116,8 @@ input[type="text"]{
 
 .box-heading{
     margin: 1vh;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 #f-box{
     height: 80%;
@@ -188,12 +214,15 @@ li{
 
 /* Lower bar */
 #lower-box{
+    background-color: rgba(40,40,40,255);
     justify-content: space-around;
+    margin: 0px;
 }
 #left-box{
     width: 15%;
     align-items: center;
     justify-content: space-around;
+    background-color: rgba(40,40,40,255);
 }
 #midle-box{
     width: 40vw;
@@ -203,23 +232,25 @@ li{
 #right-box{
     width: 20%;
     align-items: center;
+    background-color: rgba(40,40,40,255);
 }
 #display-box{
-    height:60%;
-    width:25%;
+    height:2em;
+    width:2em;
 }
 #upper-part, #lower-part{
     width:100%;
     height: 50%;
+    background-color: rgba(40,40,40,255);
 }
 #upper-part{
+    margin-top: 0.5%;
     justify-content: center;
 }
 .control-icons{
     margin: 0 2%;
 }
 #lower-part{
-    justify-content: space-between;
     padding: 1%;
     box-sizing: border-box;
 }
@@ -227,7 +258,7 @@ li{
     width:80%;
 }
 .music-controls{
-    margin: 0 5%;
+    margin: 0 2%;
 }
 #volume{
     width:50%;
