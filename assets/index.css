@@ -1,18 +1,18 @@
 .box{
     border: 1px solid white;
-    background-color: rgba(12,16,39,255);
+    
     color: white;
 }
 body{
     margin: 0;
-
+    background-color: rgba(12,16,39,255);
 }
 .d-flex{
     display: flex;
 }
 #outer-box{
     height: fit-content;
-    width: 98.5vw;
+    width: max-content;
     display: flex;
     flex-direction: column;
 }
