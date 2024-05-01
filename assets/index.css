@@ -116,7 +116,7 @@ input[type="text"]{
     width: 100%;
     height: 100%;
 }
-.b-3:hover{
+.h-3:hover{
     transform: scale(110%);
 }
 #middle-two{
@@ -127,7 +127,7 @@ input[type="text"]{
 }
 
 .box-heading{
-    margin: 0 1vh 1vh;
+    margin: 2vh 1vh 1vh;
     font-weight: 600;
     font-size: 1.2em;
 }
@@ -154,37 +154,121 @@ input[type="text"]{
     height: 17vh;
     justify-content: space-between;
 }
-#circleboxt{
-    width: 99%;
-    height: 10vh;
-    justify-content: space-between;
-}
 
 .artist-box{
     width: 17vh;
     border-radius: 50%;
     height: 80%;
 }
+.artist-box a{
+    width: inherit;
+    border-radius: inherit;
+}
 .artist-box img{
     width: inherit;
     height: 100%;
     border-radius: inherit;
 }
+#middle-four{
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(16,22,66,255);
+}  
+#circleboxt{
+    width: 99%;
+    height: 65%;
+    justify-content: space-between;
+}
+#stations{
+    margin: 1vh;
+    height: 90%;
+    width: 17%;
+    background-image: url(./HomeScreen/genre/stations.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .genre-box{
-    width: 10vh;
+    width: 15%;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.genre-box div{
+    opacity: 1;
+    color: #000000;
+    text-shadow:2px 1px 1px rgb(255, 255, 255);
+}
+#genre1{
+    background-image: url(./HomeScreen/genre/love.jpeg);
+    background-size: contain;
+}
+#genre2{
+    background-image: url(./HomeScreen/genre/retro.jpeg);
+    background-size: contain;
+}
+#genre3{
+    background-image: url(./HomeScreen/genre/chill.jpeg);
+    background-size: contain;
+}
+#genre4{
+    background-image: url(./HomeScreen/genre/workout.png);
+    background-size: contain;
+}
+#genre5{
+    background-image: url(./HomeScreen/genre/rock.jpeg);
+    background-size: contain;
+}
+#genre6{
+    background-image: url(./HomeScreen/genre/pop.jpeg);
+    background-size: contain;
+}
+#genre1{
+    background-image: url(./HomeScreen/genre/love.jpeg);
+    background-size: contain;
 }
 #middle-five{
+    margin-top: 2.5%;
     height: 20vh;
     justify-content: space-between;
 }
+#artist1{
+    background-image: url("./HomeScreen/party.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#artist2{
+    background-image: url("./HomeScreen/electronic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#artist3{
+    background-image: url("./HomeScreen/road\ trip.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .b-5{
-    height: 15vh;
+    height: 25vh;
     justify-content: space-between;
     margin-bottom: 0.5vh;
 }
+.date{
+    color: darkgrey;
+    font-size: smaller;
+}
 .e-b{
     width: 17.5%;
+}
+.e-b img{
+    width: 100%;
+    height: 65%;
+}
+.club{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 /* right-section */
 
@@ -234,6 +318,7 @@ li{
     background-color: rgba(40,40,40,255);
     justify-content: space-around;
     margin: 0px;
+    width: 100%;
 }
 #left-box{
     width: 15%;
@@ -254,6 +339,8 @@ li{
 #display-box{
     height:2em;
     width:2em;
+    background-image: url(./HomeScreen/john\ lenon);
+    background-size: contain;
 }
 #upper-part, #lower-part{
     width:100%;

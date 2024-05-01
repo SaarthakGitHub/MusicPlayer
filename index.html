@@ -1,230 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/index.css" type="text/css">
-    <script src="https://kit.fontawesome.com/3f7ec1e94a.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/index.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/3f7ec1e94a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="outer-box" class="box">
-        <div id="upper-box" class="box bar">
-            <div id="logo" class="d-flex">
-                <i class="fa-solid fa-music"></i>
-            </div>
-            <div id="app-name" class="d-flex">
-                <div class="text">Music</div>
-                <div class="text" style="margin-left: 40%">Studio</div>
-            </div>
-            <div id="favourite-text" class="text">Favourites</div>
-            <div id="right-items" class="d-flex">
-                <div id="pill" class="box d-flex">
-                    <div class="text"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <input type="text" placeholder="search">
-                    <div class="text" style="position: static;"><i class="fa-solid fa-microphone"></i></div>
-                </div>
-                <div class="text"><i class="fa-solid fa-bell"></i></div>
-                <div id="profile">
-                </div>
-            </div>
+      <div id="upper-box" class="box bar">
+        <div id="logo" class="d-flex">
+          <i class="fa-solid fa-music"></i>
         </div>
-        <div id="middle-box" class="box">
-            <aside>
-            <div id="left-section" class="box d-aside">
-                <div id="middle-upper" class="d-flex">
-                    <div id="artist1" class="b-3">
-                        <img src="./assets/HomeScreen/latino dance club.png">
-                    </div>
-                    <div id="artist2" class="b-3">
-                        <img src="./assets/HomeScreen/electronic.png">
-                    </div>
-                    <div id="artist3" class="b-3">
-                        <img src="./assets/HomeScreen/edm.png">
-                    </div>
-                </div>
-                <div id="middle-two" class="box">
-                    <div class="text box-heading">Latest Releases</div>
-                    <div id="f-box" class="box d-flex">
-                        <div id="poster1" class="box poster"></div>
-                        <div id="poster2" class="box poster"></div>
-                        <div id="poster3" class="box poster"></div>
-                        <div id="poster4" class="box poster"></div>
-                    </div>
-                </div>
-                <div id="middle-three" class="box">
-                    <div class="text box-heading">Popular Artists</div>
-                    <div id="circlebox" class="box d-flex">
-                        <a href="./artist1.html">
-                        <div class="artist-box box">
-                            <img src="./assets/HomeScreen/popular Artists/ed sheeran.jpg">
-                            <div class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ed Sheeran</div>
-                        </div>
-                    </a>
-                        <div class="artist-box box">
-                            <img src="./assets/HomeScreen/popular Artists/coldplay.jpg">
-                            <div class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coldplay</div>
-                        </div>
-                        <div class="artist-box box">
-                            <img src="./assets/HomeScreen/popular Artists/zayn malik.jpeg">
-                            <div class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zayn Malik</div>
-                        </div>
-                        <div class="artist-box box">
-                            <img src="./assets/HomeScreen/popular Artists/charlie puth.png">
-                            <div class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charlie Puth</div>
-                        </div>
-                        <div class="artist-box box">
-                            <img src="./assets/HomeScreen/popular Artists/imagine dragons.jpeg">
-                            <div class="text">&nbsp;&nbsp;Imagine Dragons</div>
-                        </div>
-                        <div class="artist-box box">
-                            <img src="./assets/HomeScreen/popular Artists/bruno mars.jpeg">
-                            <div class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bruno Mars</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="middle-four" class="box">
-                    <div id="circleboxt" class="box d-flex">
-                        <div id="genre1" class="genre-box box"></div>
-                        <div id="genre2" class="genre-box box"></div>
-                        <div id="genre3" class="genre-box box"></div>
-                        <div id="genre4" class="genre-box box"></div>
-                        <div id="genre5" class="genre-box box"></div>
-                        <div id="genre6" class="genre-box box"></div>
-                    </div>
-                </div>
-                <div id="middle-five" class="box d-flex">
-                    <div id="artist1" class="box b-3"></div>
-                    <div id="artist2" class="box b-3"></div>
-                    <div id="artist3" class="box b-3"></div>
-                </div>
-                <div id="middle-six" class="box">
-                    <div class="text box-heading">Latest English</div>
-                    <div id="english" class="box b-5 d-flex">
-                        <div id="english1" class="box e-b"></div>
-                        <div id="english2" class="box e-b"></div>
-                        <div id="english3" class="box e-b"></div>
-                        <div id="english4" class="box e-b"></div>
-                        <div id="english5" class="box e-b"></div>
-                    </div>
-                </div>
-                <div id="middle-seven" class="box">
-                    <div class="text box-heading">Latest Hindi</div>
-                    <div id="hindi" class="box b-5 d-flex">
-                        <div id="hindi1" class="box e-b"></div>
-                        <div id="hindi2" class="box e-b"></div>
-                        <div id="hindi3" class="box e-b"></div>
-                        <div id="hindi4" class="box e-b"></div>
-                        <div id="hindi5" class="box e-b"></div>
-                    </div>
-                </div>
+        <div id="app-name" class="d-flex">
+          <div class="text">Music</div>
+          <div class="text" style="margin-left: 40%">Studio</div>
+        </div>
+        <div id="favourite-text" class="text">Favourites</div>
+        <div id="right-items" class="d-flex">
+          <div id="pill" class="box d-flex">
+            <div class="text"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" placeholder="search" />
+            <div class="text" style="position: static">
+              <i class="fa-solid fa-microphone"></i>
             </div>
-            <div id="right-section" class="box d-aside">
-                <div id="right-head" class="box d-flex">
-                    <div id="first-head" class="box"></div>
-                    <div id="second-head" class="box"></div>
-                </div>
-                <div id="queue-list" class="box">
-                    <ol id="queue-box" type="1">
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"> </div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-                        <li class="d-flex">
-                            <div id="song1" class="song-box box"></div>
-                            <div class="box text song-text"></div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                        </li>
-
-                    </ol>
-                </div>
+          </div>
+          <div class="text"><i class="fa-solid fa-bell"></i></div>
+          <div id="profile"></div>
+        </div>
+      </div>
+      <div id="middle-box" class="box">
+        <aside>
+          <div id="left-section" class="d-aside">
+            <div id="middle-upper" class="d-flex">
+              <div id="artist1" class="b-3 h-3">
+                <img src="./assets/HomeScreen/latino dance club.png" />
+              </div>
+              <div id="artist2" class="b-3 h-3">
+                <img src="./assets/HomeScreen/mood booster.png" />
+              </div>
+              <div id="artist3" class="b-3 h-3">
+                <img src="./assets/HomeScreen/edm.png" />
+              </div>
             </div>
+            <div id="middle-two" class="box">
+              <div class="text box-heading">Latest Releases</div>
+              <div id="f-box" class="box d-flex">
+                <div id="poster1" class="box poster"></div>
+                <div id="poster2" class="box poster"></div>
+                <div id="poster3" class="box poster"></div>
+                <div id="poster4" class="box poster"></div>
+              </div>
+            </div>
+            <div id="middle-three">
+              <div class="text box-heading">Popular Artists</div>
+              <div id="circlebox" class="d-flex">
+                <div class="artist-box">
+                  <a href="./artist1.html">
+                    <img
+                      src="./assets/HomeScreen/popular Artists/ed sheeran.jpg"
+                    />
+                  </a>
+                  <div class="text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ed Sheeran
+                  </div>
+                </div>
+                <div class="artist-box">
+                  <a href="./artist1.html">
+                    <img
+                      src="./assets/HomeScreen/popular Artists/coldplay.jpg"
+                    />
+                  </a>
+                  <div class="text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coldplay
+                  </div>
+                </div>
+                <div class="artist-box">
+                  <a href="./artist1.html">
+                    <img
+                      src="./assets/HomeScreen/popular Artists/zayn malik.jpeg"
+                    />
+                  </a>
+                  <div class="text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zayn Malik
+                  </div>
+                </div>
+                <div class="artist-box">
+                      <a href="./artist1.html">
+                    <img
+                      src="./assets/HomeScreen/popular Artists/charlie puth.png"
+                    />
+                </a>
+                    <div class="text">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charlie Puth
+                    </div>
+                  </div>
+                  <div class="artist-box">
+                      <a href="./artist1.html">
+                    <img
+                      src="./assets/HomeScreen/popular Artists/imagine dragons.jpeg"
+                    />
+                </a>
+                    <div class="text">&nbsp;&nbsp;Imagine Dragons</div>
+                  </div>
+                  <div class="artist-box">
+                      <a href="./artist1.html">
+                    <img
+                      src="./assets/HomeScreen/popular Artists/bruno mars.jpeg"
+                    />
+                </a>
+                    <div class="text">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bruno Mars
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div id="middle-four" class="d-flex">
+                <div id="stations"></div>
+              <div id="circleboxt" class="d-flex">
+                <div id="genre1" class="genre-box d-flex"><div class="text">Love</div></div>
+                <div id="genre2" class="genre-box d-flex"><div class="text">Retro</div></div>
+                <div id="genre3" class="genre-box d-flex"><div class="text">Chill</div></div>
+                <div id="genre4" class="genre-box d-flex"><div class="text">Workout</div></div>
+                <div id="genre5" class="genre-box d-flex"><div class="text">Rock</div></div>
+                <div id="genre6" class="genre-box d-flex"><div class="text">Pop</div></div>
+              </div>
+            </div>
+            <div id="middle-five" class="d-flex">
+              <div id="artist1" class="b-3"></div>
+              <div id="artist2" class="b-3"></div>
+              <div id="artist3" class="b-3"></div>
+            </div>
+            <div id="middle-six">
+              <div class="text box-heading">Latest English</div>
+              <div id="english" class="b-5 d-flex">
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/first.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/2.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/3.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/4.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/first.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+              </div>
+            </div>
+            <div id="middle-seven">
+              <div class="text box-heading">Latest Hindi</div>
+              <div id="hindi" class="b-5 d-flex">
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/first.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/2.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/3.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/4.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+                <div class="e-b">
+                    <img src="./assets/HomeScreen/songcover/first.png">
+                    <div class="text">Onism</div>
+                    <div class="date text">AUG 11, 2017</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="right-section" class="box d-aside">
+            <div id="right-head" class="box d-flex">
+              <div id="first-head" class="box"></div>
+              <div id="second-head" class="box"></div>
+            </div>
+            <div id="queue-list" class="box">
+              <ol id="queue-box" type="1">
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+                <li class="d-flex">
+                  <div id="song1" class="song-box box"></div>
+                  <div class="box text song-text"></div>
+                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                </li>
+              </ol>
+            </div>
+          </div>
         </aside>
+      </div>
+      <div id="lower-box" class="bar d-flex">
+        <div id="left-box" class="d-flex">
+          <div id="display-box"></div>
+          <div id="text-box">
+            <div class="text">Imageine by Jo</div>
+            <div class="text" style="font-size: 70%">John Lenon</div>
+          </div>
+          <div class="text"><i class="fa-regular fa-heart"></i></div>
+          <div class="text"><i class="fa-solid fa-ban"></i></div>
         </div>
-        <div id="lower-box" class="box bar d-flex">
-            <div id="left-box" class="d-flex">
-                <div id="display-box" class="box"></div>
-                <div id="text-box">
-                    <div class="text">Imageine by Jo</div>
-                    <div class="text" style="font-size: 70%;">John Lenon</div>
-                </div>
-                <div class="text"><i class="fa-regular fa-heart"></i></div>
-                <div class="text"><i class="fa-solid fa-ban"></i></div>
+        <div id="midle-box" class="d-flex">
+          <div id="upper-part" class="d-flex">
+            <div class="text control-icons">
+              <i class="fa-solid fa-shuffle"></i>
             </div>
-            <div id="midle-box" class="d-flex">
-                <div id="upper-part" class="d-flex">
-                    <div class="text control-icons"><i class="fa-solid fa-shuffle"></i></div>
-                    <div class="text control-icons"><i class="fa-solid fa-backward-fast"></i></div>
-                    <div class="text box control-icons" style="border-radius: 50%; width:4%;"><i class="fa-solid fa-pause"></i></div>
-                    <div class="text control-icons"><i class="fa-solid fa-forward-fast"></i></div>
-                    <div class="text control-icons"><i class="fa-solid fa-repeat"></i></div>
-                </div>
-                <div id="lower-part" class="d-flex">
-                    <div class="text">1:39</div>
-                    <input id="music-player" type="range">
-                    <div class="text">1:44</div>
-                </div>
+            <div class="text control-icons">
+              <i class="fa-solid fa-backward-fast"></i>
             </div>
-            <div id="right-box" class="d-flex">
-                <div class="text music-controls"><i class="fa-solid fa-list-ul"></i></div>
-                <div class="text music-controls"><i class="fa-solid fa-computer"></i></div>
-                <div class="text music-controls"><i class="fa-solid fa-volume-high"></i></div>
-                <input id="volume" type="range">
-                <div class="text music-controls"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            <div
+              class="text box control-icons"
+              style="border-radius: 50%; width: 4%; box-shadow: 0px 0px 3px 1px white;"
+            >
+              <i class="fa-solid fa-pause"></i>
             </div>
+            <div class="text control-icons">
+              <i class="fa-solid fa-forward-fast"></i>
+            </div>
+            <div class="text control-icons">
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+          </div>
+          <div id="lower-part" class="d-flex">
+            <div class="text">1:39</div>
+            <input id="music-player" type="range" />
+            <div class="text">1:44</div>
+          </div>
         </div>
+        <div id="right-box" class="d-flex">
+          <div class="text music-controls">
+            <i class="fa-solid fa-list-ul"></i>
+          </div>
+          <div class="text music-controls">
+            <i class="fa-solid fa-computer"></i>
+          </div>
+          <div class="text music-controls">
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+          <input id="volume" type="range" />
+          <div class="text music-controls">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
