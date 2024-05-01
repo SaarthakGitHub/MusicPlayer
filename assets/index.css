@@ -77,6 +77,8 @@ input{
     border-radius: 50%;
     height: 70%;
     width: 2.75em;
+    background-image: url(./profile.avif);
+    background-size: contain;
 }
 input[type="text"]{
     width: 60%;
@@ -102,10 +104,20 @@ input[type="text"]{
 #middle-upper{
     height: 30vh;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 .b-3{
-    width: 20vw;
-    margin: 1vh;
+    width: 21vw;
+    margin: 1vh 1vh 0;
+    height: 90%;
+    
+}
+.b-3 img{
+    width: 100%;
+    height: 100%;
+}
+.b-3:hover{
+    transform: scale(110%);
 }
 #middle-two{
     height: 60vh;
@@ -115,7 +127,7 @@ input[type="text"]{
 }
 
 .box-heading{
-    margin: 1vh;
+    margin: 0 1vh 1vh;
     font-weight: 600;
     font-size: 1.2em;
 }
@@ -132,14 +144,14 @@ input[type="text"]{
 
 #middle-three{
     margin-top: 0.5vh;
-    height: 20vh;
+    height: 23vh;
     margin-bottom: 1vh;
 }
 
 #circlebox{
     width: 99%;
     margin: 0.5vh;
-    height: 14vh;
+    height: 17vh;
     justify-content: space-between;
 }
 #circleboxt{
@@ -149,9 +161,14 @@ input[type="text"]{
 }
 
 .artist-box{
-    width: 15vh;
+    width: 17vh;
     border-radius: 50%;
-    height: inherit;
+    height: 80%;
+}
+.artist-box img{
+    width: inherit;
+    height: 100%;
+    border-radius: inherit;
 }
 .genre-box{
     width: 10vh;
