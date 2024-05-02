@@ -362,7 +362,7 @@ select{
     display: none;
 }
 li{
-    justify-content: space-between;
+    position:relative;
     align-items: center;
     margin: 2vh;
 }
@@ -371,12 +371,12 @@ li{
     width:5vh;
 }
 .song-text{
-    position:relative;
-    right: 11vh;
+    position:absolute;
+    left: 23%;
 }
 .heart{
-    position: relative;
-    right: 1vw;
+    position: absolute;
+    right: -1vw;
     height: 3vh;
     width: 2vw;
 }
