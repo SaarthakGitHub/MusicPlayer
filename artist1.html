@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/artist1.css" type="text/css"></link>
+    <script
+      src="https://kit.fontawesome.com/3f7ec1e94a.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <div id="outer-box" class="box">
-    <div id="upper-box" class="box bar">
-        <div id="logo" class="box"></div>
-        <div id="favourite-text" class="box text"></div>
-        <div id="right-items" class="box d-flex">
-            <div id="pill" class="box d-flex">
-                <div class="text box"></div>
-                <input type="text">
-                <div class="text box"></div>
+        <div id="upper-box">
+            <div id="logo" class="d-flex">
+              <i class="fa-solid fa-music"></i>
             </div>
-            <div class="text box"></div>
-            <div id="profile" class="box"></div>
-        </div>
-    </div>
+            <div id="app-name" class="d-flex">
+              <div class="text">Music</div>
+              <div class="text" style="margin-left: 40%">Studio</div>
+            </div>
+            <div id="favourite-text" class="text">Favourites</div>
+            <div id="right-items" class="d-flex">
+              <div id="pill" class="box d-flex">
+                <div class="text"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" placeholder="search" />
+                <div class="text" style="position: static">
+                  <i class="fa-solid fa-microphone"></i>
+                </div>
+              </div>
+              <div class="text"><i class="fa-solid fa-bell"></i></div>
+              <div id="profile"></div>
+            </div>
+          </div>
     <div id="middle-box" class="box">
         <aside>
             <div id="left-section" class="box d-aside">
@@ -183,38 +195,59 @@
             </div>
         </aside>
     </div>
-    <div id="lower-box" class="box bar d-flex">
-        <div id="left-box" class="box d-flex">
-            <div id="display-box" class="box"></div>
-            <div id="text-box" class="box">
-                <div class="text box"></div>
-                <div class="text box"></div>
-            </div>
-            <div class="text box"></div>
-            <div class="text box"></div>
+    <div id="lower-box" class="bar d-flex">
+        <div id="left-box" class="d-flex">
+          <div id="display-box"></div>
+          <div id="text-box">
+            <div class="text">Imageine by Jo</div>
+            <div class="text" style="font-size: 70%">John Lenon</div>
+          </div>
+          <div class="text"><i class="fa-regular fa-heart"></i></div>
+          <div class="text"><i class="fa-solid fa-ban"></i></div>
         </div>
-        <div id="midle-box" class="box d-flex">
-            <div id="upper-part" class="box d-flex">
-                <div class="text box control-icons"></div>
-                <div class="text box control-icons"></div>
-                <div class="text box control-icons"></div>
-                <div class="text box control-icons"></div>
-                <div class="text box control-icons"></div>
+        <div id="midle-box" class="d-flex">
+          <div id="upper-part" class="d-flex">
+            <div class="text control-icons">
+              <i class="fa-solid fa-shuffle"></i>
             </div>
-            <div id="lower-part" class="box d-flex">
-                <div class="text box"></div>
-                <input id="music-player" type="range">
-                <div class="text box"></div>
+            <div class="text control-icons">
+              <i class="fa-solid fa-backward-fast"></i>
             </div>
+            <div
+              class="text box control-icons"
+              style="border-radius: 50%; width: 4%; box-shadow: 0px 0px 3px 1px white;"
+            >
+              <i class="fa-solid fa-pause"></i>
+            </div>
+            <div class="text control-icons">
+              <i class="fa-solid fa-forward-fast"></i>
+            </div>
+            <div class="text control-icons">
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+          </div>
+          <div id="lower-part" class="d-flex">
+            <div class="text">1:39</div>
+            <input id="music-player" type="range" />
+            <div class="text">1:44</div>
+          </div>
         </div>
-        <div id="right-box" class="box d-flex">
-            <div class="text box music-controls"></div>
-            <div class="text box music-controls"></div>
-            <div class="text box music-controls"></div>
-            <input id="volume" type="range">
-            <div class="text box music-controls"></div>
+        <div id="right-box" class="d-flex">
+          <div class="text music-controls">
+            <i class="fa-solid fa-list-ul"></i>
+          </div>
+          <div class="text music-controls">
+            <i class="fa-solid fa-computer"></i>
+          </div>
+          <div class="text music-controls">
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+          <input id="volume" type="range" />
+          <div class="text music-controls">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
         </div>
-    </div>
+      </div>
 </div>
 </body>
 </html>
