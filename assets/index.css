@@ -7,6 +7,10 @@ body{
     margin: 0;
     background-color: rgba(12,16,39,255);
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .d-flex{
     display: flex;
 }
@@ -84,10 +88,7 @@ input[type="text"]{
     width: 60%;
 }
 
-
-
 /* Middle box */
-
 
 #middle-box{
     margin: 0.5vh;
@@ -97,7 +98,9 @@ input[type="text"]{
     display: inline-block;
     vertical-align: top;
 }
+
 /* left-section */
+
 #left-section{
     width: 70%;
 }
@@ -120,41 +123,84 @@ input[type="text"]{
     transform: scale(110%);
 }
 #middle-two{
-    height: 60vh;
+    height: 35vh;
 }
-#f-box{
-    flex-wrap: wrap;
-}
-
 .box-heading{
     margin: 2vh 1vh 1vh;
     font-weight: 600;
     font-size: 1.2em;
 }
 #f-box{
-    height: 80%;
+    flex-wrap: wrap;
+    height: 82%;
     margin: 1vh;
     justify-content: space-between;
 }
-
 .poster{
     width: 48%;
     margin-bottom: 1vh;
+    position: relative;
 }
-
+.posterPic{
+    width: 25%;
+    background-image: url(./HomeScreen/john\ lenon);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mt-2{
+    margin-top: 2%;
+}
+div.two-box.d-flex{
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 2%;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#check1:checked ~ #toggler1{
+    display: block;
+}
+#check2:checked ~ #toggler2{
+    display: block;
+}
+#check3:checked ~ #toggler3{
+    display: block;
+}
+#check4:checked ~ #toggler4{
+    display: block;
+}
+#toggler1{
+    top: 65%;
+}
+#toggler2{
+    top: 65%;
+}
+#toggler3{
+    top: 65%;
+}
+#toggler4{
+    top: 65%;
+}
+.toggler{
+    width: max-content;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display:none;
+    color: black;
+}
 #middle-three{
     margin-top: 0.5vh;
     height: 23vh;
     margin-bottom: 1vh;
 }
-
 #circlebox{
     width: 99%;
     margin: 0.5vh;
     height: 17vh;
     justify-content: space-between;
 }
-
 .artist-box{
     width: 17vh;
     border-radius: 50%;
