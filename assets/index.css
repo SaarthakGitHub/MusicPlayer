@@ -306,7 +306,6 @@ input[type="checkbox"]{
     margin-bottom: 0.5vh;
 }
 .date{
-    color: darkgrey;
     font-size: smaller;
 }
 .e-b{
@@ -347,7 +346,10 @@ select{
     background-color: transparent;
     color: rgba(76,215,184,255);
     width:100%;
-    border-style: none;
+    border: none;
+}
+option{
+    color:black;
 }
 #arrow{
     transform: rotate(90deg);
@@ -361,14 +363,36 @@ select{
 #queue-list::-webkit-scrollbar{
     display: none;
 }
+.cgrey{
+    color:darkgrey
+}
+.t-s{
+    font-size: smaller;
+}
 li{
     position:relative;
     align-items: center;
     margin: 2vh;
 }
 .song-box{
-    height:5vh;
-    width:5vh;
+    height:6vh;
+    width:6vh;
+}
+.song1{
+    background-image: url(./HomeScreen/songcover/first.png);
+    background-size: contain;
+}
+.song2{
+    background-image: url(./HomeScreen/songcover/2.png);
+    background-size: contain;
+}
+.song3{
+    background-image: url(./HomeScreen/songcover/3.png);
+    background-size: contain;
+}
+.song4{
+    background-image: url(./HomeScreen/songcover/4.png);
+    background-size: contain;
 }
 .song-text{
     position:absolute;
