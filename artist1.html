@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id="outer-box">
+      <!-- NavBar code -->
         <div id="upper-box">
             <div id="logo" class="d-flex">
               <i class="fa-solid fa-music"></i>
@@ -21,7 +22,9 @@
               <div class="text" style="margin-left: 40%">Studio</div>
             </div>
             <div id="favourite-text" class="text">Favourites</div>
+            <!-- Items on the right side of navbar -->
             <div id="right-items" class="d-flex">
+              <!-- Search bar -->
               <div id="pill" class="d-flex">
                 <div class="text"><i class="fa-solid fa-magnifying-glass"></i></div>
                 <input type="text" placeholder="search" />
@@ -29,13 +32,19 @@
                   <i class="fa-solid fa-microphone"></i>
                 </div>
               </div>
+              <!-- Notification logo -->
               <div class="text"><i class="fa-solid fa-bell"></i></div>
+              <!-- Profile picture of user -->
               <div id="profile"></div>
             </div>
           </div>
+          <!-- Main Content -->
+          <main>
     <div id="middle-box">
         <aside>
+          <!-- left panel code -->
             <div id="left-section" class="d-aside">
+              <!-- Container of Arist poster -->
                 <div id="artist-display" class="d-flex">
                     <div id="artist-image">
                       <img src="./assets/HomeScreen/popular Artists/coldplay.jpg">
@@ -52,6 +61,7 @@
                             <div id="artist-d" class="text sec-color">Coldplay are a British rock band formed in London in 1997, consisting of vocalist and pianist Chris Martin, lead guitarist Jonny Buckland, bassist Guy Berryman, drummer Will Champion, and manager Phil Harvey.</div>
                             <div id="song-dec" class="d-flex">
                             <div class="two-box">
+                              <!-- Play All Box -->
                                 <div id="gradient-box" class="text d-flex">Play All</div>
                                 <div class="text t-s">247 Tracks| 128 Albums</div>
                             </div>
@@ -60,20 +70,27 @@
                         </div>
                     </div>
                 </div>
+                <!-- List of playlist songs -->
                 <ol>
+                  <!-- .f will add style to list items -->
                     <li class="d-flex f">
+                      <!-- .count adds alignmnet to serial number -->
                       <div class="text sec-color count" style="margin-right: 3%;">01</div>
-                  <div class="song1 song-box"></div>
+                  <!-- Image of song1 and song-box sets height of image-->
+                      <div class="song1 song-box"></div>
                   <div class="two-box song-text ">
                     <div class="text mt-5">Mirage</div>
                     <div class="text flex-start t-s sec-color">Else</div>
                 </div>
+                <!-- absolute classes postions element to rightmost of container -->
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;"><i class="fa-solid fa-chart-simple"></i></div>
-                  <div class="song2 song-box"></div>
+                  <!-- Image of song2 -->
+                      <div class="song2 song-box"></div>
                   <div class="two-box song-text ">
                     <div class="text mt-5">Worry Bout Us</div>
                     <div class="text t-s flex-start sec-color">Rosie Lowe</div>
@@ -81,9 +98,11 @@
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">03</div>
-                  <div class="song3 song-box"></div>
+                  <!-- Image of song3 -->
+                      <div class="song3 song-box"></div>
                   <div class="two-box song-text d-flex">
                     <div class="text mt-5">New Skin</div>
                     <div class="text flex-start t-s sec-color">Flume</div>
@@ -91,9 +110,11 @@
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f" style="position: relative;">
                       <div class="text sec-color count" style="margin-right: 3%;">04</div>
-                  <div class="song4 song-box3"></div>
+                  <!-- Image of song4 and song-box3 adds opacity to song image-->
+                      <div class="song4 song-box3"></div>
                   <div class="play2 d-flex"><i class="fa-solid fa-play"></i></div>
                   <div class="two-box song-text ">
                     <div class="text mt-5">Worry Bout Us</div>
@@ -102,6 +123,7 @@
                   <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                   <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+                    <!-- Here above 4 box keeps on repeating to populate list -->
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">05</div>
                   <div class="song1 song-box"></div>
@@ -112,6 +134,7 @@
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">06</div>
                   <div class="song2 song-box"></div>
@@ -122,6 +145,7 @@
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">07</div>
                   <div class="song3 song-box"></div>
@@ -132,6 +156,7 @@
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">08</div>
                   <div class="song4 song-box"></div>
@@ -142,6 +167,7 @@
                   <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                   <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">09</div>
                   <div class="song1 song-box"></div>
@@ -152,6 +178,7 @@
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">10</div>
                   <div class="song2 song-box"></div>
@@ -162,6 +189,7 @@
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">11</div>
                   <div class="song3 song-box"></div>
@@ -172,6 +200,7 @@
                 <div class="absolute-right1 mt-2 sec-color text"><i class="fa-regular fa-heart"></i></div>
                 <div class="absolute-right mt-2 sec-color text"><i class="fa-solid fa-plus"></i></div>
                     </li>
+
                     <li class="d-flex f">
                       <div class="text sec-color count" style="margin-right: 3%;">12</div>
                   <div class="song4 song-box"></div>
@@ -185,27 +214,38 @@
                     
                 </ol>
             </div>
+            <!-- Right panel code -->
             <div id="right-section" class="d-aside">
+              <!-- This section is divided into 2 section -->
                 <div id="upper-aside">
                     <div class="d-flex right-panel-heading">
                       <div class="text">Similar Artists</div>
+                      <!-- .t-s decrease the size of font -->
                       <div class="text t-s sec-color">View All</div>
                     </div>
                     <br>
+                    <!-- song list is divided into 2 parts and have as much space as possible between them -->
                         <li class="d-flex" style="width: 100%; margin-bottom: 3%; justify-content: space-between;">
+                          <!-- left side of list-item -->
                           <div class = "left-list d-flex">
+                            <!-- song-box2 add larger height and width to song image -->
                             <div class="song2 song-box2"></div>
                             <div class="two-box flex-start d-flex song-text">
+                              <!-- .bold boldens the text -->
                               <div class="text bold">Imagine Dragons</div>
                               <br>
+                              <!-- Add greyish color to text -->
                               <div class="text t-s sec-color">Pop Brand</div>
                           </div>
                           </div>
+                          <!-- Right side of list item -->
                           <div class="right-list">
+                            <!-- mb-2 is margin-bottom -->
                             <div class="text mb-2"><i class="fa-solid fa-ellipsis"></i></div>
                             <div class="text">4:44</div>
                           </div>
                         </li>
+                        <!-- List items repeat -->
                         <li class="d-flex" style="width: 100%; margin-bottom: 3%; justify-content: space-between;">
                           <div class = "left-list d-flex">
                             <div class="song2 song-box2"></div>
@@ -236,21 +276,25 @@
                         </li>
                 </div>
                 <br>
+                <!-- Lower part of right panel -->
                 <div id="lower-aside">
                   <div class="d-flex right-panel-heading">
                     <div class="text">Recently Played</div>
                     <div class="text t-s sec-color">View All</div>
                     </div>
+                    <!-- this list will be exact replica of list on left panel -->
                     <ol type="1">
                           <li class="d-flex" style="margin-bottom: 3%;">
                             <div class="text sec-color count" style="margin-right: 3%;">01</div>
                         <div class="song1 song-box"></div>
                         <div class="two-box song-text ">
                           <div class="text">Mirage</div>
+                          <!-- flex-start overrides the property of .text and align text to start -->
                           <div class="text flex-start t-s sec-color">Else</div>
                       </div>
                       <div class="absolute-right sec-color text mt-3"><i class="fa-regular fa-heart"></i></div>
                           </li>
+
                           <li class="d-flex" style="margin-bottom: 3%;">
                             <div class="text sec-color count" style="margin-right: 3%;"><i class="fa-solid fa-chart-simple"></i></div>
                         <div class="song2 song-box"></div>
@@ -260,6 +304,7 @@
                       </div>
                       <div class="absolute-right sec-color text mt-3"><i class="fa-regular fa-heart"></i></div>
                           </li>
+
                           <li class="d-flex" style="margin-bottom: 3%;">
                             <div class="text sec-color count" style="margin-right: 3%;">03</div>
                         <div class="song3 song-box"></div>
@@ -269,6 +314,7 @@
                       </div>
                       <div class="absolute-right sec-color text mt-3"><i class="fa-regular fa-heart"></i></div>
                           </li>
+
                           <li class="d-flex" style="margin-bottom: 3%; position: relative;">
                             <div class="text sec-color count" style="margin-right: 3%;">04</div>
                         <div class="song1 song-box song-box3"></div>
@@ -279,6 +325,7 @@
                       </div>
                       <div class="absolute-right sec-color text mt-3"><i class="fa-regular fa-heart"></i></div>
                           </li>
+
                           <li class="d-flex" style="margin-bottom: 3%;">
                             <div class="text sec-color count" style="margin-right: 3%;">05</div>
                         <div class="song2 song-box"></div>
@@ -288,6 +335,7 @@
                       </div>
                       <div class="absolute-right sec-color text mt-3"><i class="fa-regular fa-heart"></i></div>
                           </li>
+
                           <li class="d-flex" style="margin-bottom: 3%;">
                             <div class="text sec-color count" style="margin-right: 3%;">06</div>
                         <div class="song3 song-box"></div>
@@ -297,6 +345,7 @@
                       </div>
                       <div class="absolute-right sec-color text mt-3"><i class="fa-regular fa-heart"></i></div>
                           </li>
+
                           <li class="d-flex" style="margin-bottom: 3%;">
                             <div class="text sec-color count" style="margin-right: 3%;">07</div>
                         <div class="song1 song-box"></div>
@@ -306,6 +355,7 @@
                       </div>
                       <div class="absolute-right sec-color text mt-3"><i class="fa-regular fa-heart"></i></div>
                           </li>
+
                           <li class="d-flex" style="margin-bottom: 3%;">
                             <div class="text sec-color count" style="margin-right: 3%;">08</div>
                         <div class="song2 song-box"></div>
@@ -315,6 +365,7 @@
                       </div>
                       <div class="absolute-right sec-color text mt-3"><i class="fa-regular fa-heart"></i></div>
                           </li>
+
                           <li class="d-flex" style="margin-bottom: 3%;">
                             <div class="text sec-color count" style="margin-right: 3%;">09</div>
                         <div class="song3 song-box"></div>
@@ -329,9 +380,14 @@
             </div>
         </aside>
     </div>
+    </main>
+    <!-- Bottom music bar -->
     <div id="lower-box" class="bar d-flex">
+      <!-- music bar is divided into 3 parts -->
         <div id="left-box" class="d-flex">
+          <!-- picture of current song -->
           <div id="display-box"></div>
+          <!-- Contains music name and artist name -->
           <div id="text-box">
             <div class="text">Imageine by Jo</div>
             <div class="text" style="font-size: 70%">John Lenon</div>
@@ -339,16 +395,20 @@
           <div class="text"><i class="fa-regular fa-heart"></i></div>
           <div class="text"><i class="fa-solid fa-ban"></i></div>
         </div>
+        <!-- middle box have controls regarding music -->
         <div id="midle-box" class="d-flex">
+          <!-- this section is divide into 2 parts where flex-direction is column -->
           <div id="upper-part" class="d-flex">
+            <!-- Contains five 5 icons -->
             <div class="text control-icons">
               <i class="fa-solid fa-shuffle"></i>
             </div>
+            <!-- .control-icons adds margin to icon -->
             <div class="text control-icons">
               <i class="fa-solid fa-backward-fast"></i>
             </div>
             <div id="pause"
-              class="text box control-icons"
+              class="text control-icons"
               style="border-radius: 50%; width: 4%; box-shadow: 0px 0px 3px 1px white;"
             >
               <i class="fa-solid fa-pause"></i>
@@ -360,24 +420,28 @@
               <i class="fa-solid fa-repeat"></i>
             </div>
           </div>
+          <!-- lower part of middle box -->
           <div id="lower-part" class="d-flex">
             <div class="text">1:39</div>
+            <!-- Adds slider to change music time -->
             <input id="music-player" type="range" />
             <div class="text">1:44</div>
           </div>
         </div>
+        <!-- right box of music bar -->
         <div id="right-box" class="d-flex">
-          <div class="text music-controls">
+          <div class="text control-icons">
             <i class="fa-solid fa-list-ul"></i>
           </div>
-          <div class="text music-controls">
+          <div class="text control-icons">
             <i class="fa-solid fa-computer"></i>
           </div>
-          <div class="text music-controls">
+          <div class="text control-icons">
             <i class="fa-solid fa-volume-high"></i>
           </div>
+          <!-- Slider to change volume of song -->
           <input id="volume" type="range" />
-          <div class="text music-controls">
+          <div class="text control-icons">
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
         </div>

@@ -1,16 +1,11 @@
-.box {
-    border: 1px solid white;
-}
 body {
     margin: 0;
     color: white;
     background-color: rgba(12, 16, 39, 255);
 }
+/* Hide scrollbar */
 body::-webkit-scrollbar{
     display: none;
-}
-.d-flex {
-    display: flex;
 }
 #outer-box {
     height: 100%;
@@ -18,6 +13,9 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
 }
+
+/* Navbar */
+
 #upper-box {
     display: flex;
     width: 100%;
@@ -46,10 +44,6 @@ body::-webkit-scrollbar{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.text {
-
-    background-color: transparent;
 }
 #favourite-text {
     margin-left: 5vw;
@@ -83,43 +77,35 @@ input {
     height: 70%;
     width: 2.75em;
     background-image: url(./profile.avif);
-    background-size: cover;
+    background-size: 95%;
+    background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
 }
 input[type="text"] {
-    width: 60%;
+    width: 80%;
 }
 
 
 /* Middle section */
 
 
-
 #middle-box {
     margin: 7.5vh;
-    height: fit-content;
-}
-
-#left-section {
-    width: 70%;
-}
-
-#right-section {
-    width: 29%;
 }
 .d-aside {
     display: inline-block;
     vertical-align: top;
 }
 
+/* left panel */
+#left-section {
+    width: 68%;
+    margin-right: 2%;
+}
 #artist-display {
     height: 40vh;
-    width: 98%;
     background-color: rgba(17,25,62,255);
-}
-ol .f{
-    background-color: rgba(25,30,50,255);
-    width: 98%;
 }
 #artist-image {
     width: 45%;
@@ -130,7 +116,6 @@ ol .f{
     height: 100%;
     width: 100%;
 }
-
 #artist-description {
     width: 55%;
     justify-content: flex-start;
@@ -152,14 +137,6 @@ ol .f{
 #artist{
     justify-content: space-between;
 }
-.mt-3{
-    margin-top: 3%;
-}
-.song-box3{
-    opacity: 0.7;
-    height: 6vh;
-    width: 6vh;
-}
 #gradient-box{
     height: 5vh;
     background-image: linear-gradient(90deg, rgba(77,42,184,255),rgba(185,69,220,255));
@@ -168,13 +145,15 @@ ol .f{
     justify-content: center;
     align-items: center;
 }
-.bold{
-    font-weight: bold;
+ol .f{
+    background-color: rgba(25,30,50,255);
 }
-li{
-    position:relative;
-    margin-bottom: 2%;
+.song-box3{
+    opacity: 0.7;
+    height: 6vh;
+    width: 6vh;
 }
+/* Two type of play classes */
 .play{
     position: absolute;
     left: 9%;
@@ -191,16 +170,19 @@ li{
     justify-content: center;
     align-items: center;
 }
+.absolute-right1{
+    position: absolute;
+    right: 5%;
+}
 
 /* Right panel */
 #right-section {
+    width: 29%;
     height: 80vh;
 }
-
 #upper-aside {
     margin-bottom: 2%;
 }
-
 .right-panel-heading {
     margin-top: 1%;
     height: 10%;
@@ -208,22 +190,88 @@ li{
     font-size: 1.4em;
     font-weight: 700;
 }
-.t-s{
-    font-size: 0.8rem;
+.song-box2{
+    height: 15vh;
+    min-width: 15vh;
 }
-.sec-color{
-    color: darkgrey;
+/* song-text after song-box2 */
+.song-box2 + .song-text{
+    margin-left: 5%;
+    justify-content: center;
 }
-.t-l{
-    font-size: 2rem;
-    font-weight: bold;
+.left-list{
+    width: 100%;
 }
-.second{
-    width: fit-content;
+
+
+/* Lower box */
+
+#lower-box {
+    background-color: rgba(40, 40, 40, 255);
+    justify-content: space-around;
+    margin: 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
 }
-.song-box{
-    height:6vh;
-    width:6vh;
+#left-box {
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(40, 40, 40, 255);
+}
+#display-box {
+    height: 2em;
+    width: 2em;
+    background-image: url(./HomeScreen/john\ lenon);
+    background-size: contain;
+}
+#midle-box {
+    width: 40vw;
+    align-items: center;
+    flex-direction: column;
+}
+#upper-part,
+#lower-part {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(40, 40, 40, 255);
+}
+#upper-part {
+    margin-top: 0.5%;
+    justify-content: center;
+}
+.control-icons {
+    margin: 0 2%;
+}
+#lower-part {
+    padding: 1%;
+    box-sizing: border-box;
+}
+#music-player {
+    width: 80%;
+}
+#pause{
+    padding-left: 2%;
+    padding-top: 0.5%;
+}
+#right-box {
+    width: 20%;
+    align-items: center;
+    background-color: rgba(40, 40, 40, 255);
+}
+#volume {
+    width: 50%;
+}
+
+/* General Classes */
+.count{
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+}
+.fa-chart-simple{
+    color: rgba(33,119,147,255)
 }
 .mb-2{
     margin-bottom: 20%;
@@ -233,6 +281,10 @@ li{
 }
 .mt-5{
     margin-top: 5%;
+}
+.song-box{
+    height:6vh;
+    width:6vh;
 }
 .song1{
     background-image: url(./HomeScreen/songcover/first.png);
@@ -250,19 +302,24 @@ li{
     background-image: url(./HomeScreen/songcover/4.png);
     background-size: contain;
 }
+.t-s{
+    font-size: 0.8rem;
+}
+.sec-color{
+    color: darkgrey;
+}
+.t-l{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.second{
+    width: fit-content;
+}
 .absolute-right{
     position: absolute;
     right: 2%;
 }
-.absolute-right1{
-    position: absolute;
-    right: 5%;
-}
-.song-text{
-    flex-direction: column;
-}
 .two-box{
-    /* width: inherit; */
     margin-left: 1%;
 }
 .text-alignment{
@@ -271,92 +328,19 @@ li{
 .flex-start{
     justify-content: flex-start;
 }
-.song-box2{
-    height: 15vh;
-    min-width: 15vh;
-}
-.song-box2 + .song-text{
-    margin-left: 5%;
-    justify-content: center;
-}
-.left-list{
-    width: 100%;
-}
-/* Lower box */
-#lower-box {
-    background-color: rgba(40, 40, 40, 255);
-    justify-content: space-around;
-    margin: 0px;
-    width: 100%;
-    position: fixed;
-    bottom: 0%;
-}
-.fa-chart-simple{
-    color: rgba(33,119,147,255)
-}
-#left-box {
-    width: 15%;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(40, 40, 40, 255);
-}
-
-#midle-box {
-    width: 40vw;
-    align-items: center;
+.song-text{
     flex-direction: column;
 }
-
-#right-box {
-    width: 20%;
-    align-items: center;
-    background-color: rgba(40, 40, 40, 255);
+.bold{
+    font-weight: bold;
 }
-
-#display-box {
-    height: 2em;
-    width: 2em;
-    background-image: url(./HomeScreen/john\ lenon);
-    background-size: contain;
+li{
+    position:relative;
+    margin-bottom: 2%;
 }
-
-#upper-part,
-#lower-part {
-    width: 100%;
-    height: 50%;
-    background-color: rgba(40, 40, 40, 255);
+.mt-3{
+    margin-top: 3%;
 }
-
-#upper-part {
-    margin-top: 0.5%;
-    justify-content: center;
-}
-
-.control-icons {
-    margin: 0 2%;
-}
-
-#lower-part {
-    padding: 1%;
-    box-sizing: border-box;
-}
-
-#music-player {
-    width: 80%;
-}
-
-.music-controls {
-    margin: 0 2%;
-}
-#pause{
-    padding-left: 2%;
-    padding-top: 0.5%;
-}
-#volume {
-    width: 50%;
-}
-.count{
-    margin-left: 1%;
+.d-flex {
     display: flex;
-    align-items: center;
 }
