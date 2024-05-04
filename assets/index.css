@@ -23,11 +23,15 @@ a{
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 #upper-box{
     display: flex;
-    margin: 0.5% 0;
+    position: fixed;
+    background-color: rgba(12,16,39,255);
+    z-index: 1;
+    width: 100%;
+    height: 7%;
 }
 .bar{
     margin: 0.5vh;
@@ -38,13 +42,11 @@ a{
     border-radius: 50%;
     margin-left: 5vw;
     width: 4.5vw;
-    height:inherit;
     justify-content: center;
     align-items: center;
 }
 #logo i{
     font-size: 225%;
-    color: white;
 }
 #app-name{
     flex-direction: column;
@@ -74,6 +76,7 @@ a{
     height:60%;
     width: 50%;
     padding-left:1%;
+    background-color: rgba(18,25,62,255);
 }
 #pill i{
     color: white;
@@ -98,7 +101,7 @@ input[type="text"]{
 
 #middle-box{
     margin: 0.5vh;
-    height: fit-content;
+    margin-top: 3%;
 }
 .d-aside{
     display: inline-block;
@@ -109,6 +112,10 @@ input[type="text"]{
 
 #left-section{
     width: 70%;
+    overflow: scroll;
+}
+#left-section::-webkit-scrollbar{
+    display: none;
 }
 #middle-upper{
     height: 30vh;
@@ -125,11 +132,24 @@ input[type="text"]{
     width: 100%;
     height: 100%;
 }
-.h-3:hover{
-    transform: scale(110%);
+#artist1:hover{
+    transform: scale(125%);
 }
+#artist1:hover ~ #artist2, #artist1:hover ~ #artist3{
+    opacity: 0.5;
+}
+#artist2:hover{
+    transform: scale(125%);
+}
+ #artist2:hover ~ #artist3{
+    opacity: 0.5;
+}
+#artist3:hover{
+    transform: scale(125%);
+}
+
 #middle-two{
-    height: 35vh;
+    height: 45vh;
 }
 .box-heading{
     margin: 2vh 1vh 1vh;
@@ -147,11 +167,32 @@ input[type="text"]{
     margin-bottom: 1vh;
     position: relative;
 }
-.posterPic{
+.poster a{
+    position: relative;
     width: 25%;
-    background-image: url(./HomeScreen/john\ lenon);
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+.poster a img:hover{
+    z-index: -2;
+    opacity: 0.6;
+}
+.posterPic img{
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+.posterPic img:hover{
+    z-index: -2;
+    opacity: 0.6;
+}
+
+.play2{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    z-index: -1;
+}
+.larger{
+    font-size: 2rem;
 }
 .mt-2{
     margin-top: 2%;
@@ -182,12 +223,15 @@ input[type="checkbox"]{
 }
 #toggler2{
     top: 65%;
+
 }
 #toggler3{
     top: 65%;
+    z-index: 1;
 }
 #toggler4{
     top: 65%;
+    z-index: 1;
 }
 .toggler{
     width: max-content;
@@ -212,9 +256,21 @@ input[type="checkbox"]{
     border-radius: 50%;
     height: 80%;
 }
+.hovering:hover{
+    z-index: -2;
+    opacity: 0.4;
+}
+.play{
+    position: absolute;
+    top:-245%;
+    left: 45%;
+    z-index: -1;
+    opacity: 1;
+}
 .artist-box a{
     width: inherit;
     border-radius: inherit;
+    position: relative;
 }
 .artist-box img{
     width: inherit;
@@ -285,20 +341,44 @@ input[type="checkbox"]{
     height: 20vh;
     justify-content: space-between;
 }
-#artist1{
+#artistimg1{
     background-image: url("./HomeScreen/party.png");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
 }
-#artist2{
+#artistimg1:hover{
+    background-size: 125%;
+    opacity: 0.5;
+}
+#artistimg2{
     background-image: url("./HomeScreen/electronic.png");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
 }
-#artist3{
+#artistimg2:hover{
+    background-size: 125%;
+    opacity: 0.5;
+}
+#artistimg3{
     background-image: url("./HomeScreen/road\ trip.png");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+}
+#artistimg3:hover{
+    background-size: 125%;
+    opacity: 0.5;
+}
+
+.bold{
+    font-weight: bolder;
+}
+.type{
+    position: absolute;
+    top: 40%;
+    left: 35%;
 }
 .b-5{
     height: 25vh;
@@ -406,6 +486,19 @@ li{
 }
 
 /* Lower bar */
+#lower-box2{
+    background-color: rgba(40,40,40,255);
+    justify-content: space-around;
+    margin: 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    z-index: 1;
+    display: none;
+}
+#lower-box2:target{
+    display: flex;
+}
 #lower-box{
     background-color: rgba(40,40,40,255);
     justify-content: space-around;
@@ -457,5 +550,55 @@ li{
     margin: 0 2%;
 }
 #volume{
+    width:50%;
+}
+
+
+#left-box2{
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(40,40,40,255);
+}
+#midle-box2{
+    width: 40vw;
+    align-items: center;
+    flex-direction: column;
+}
+#right-box2{
+    width: 20%;
+    align-items: center;
+    background-color: rgba(40,40,40,255);
+}
+#display-box2{
+    height:2em;
+    width:2em;
+    background-image: url(./HomeScreen/john\ lenon);
+    background-size: contain;
+}
+#upper-part2, #lower-part2{
+    width:100%;
+    height: 50%;
+    background-color: rgba(40,40,40,255);
+}
+#upper-part2{
+    margin-top: 0.5%;
+    justify-content: center;
+}
+.control-icons{
+    margin: 0 2%;
+}
+#lower-part2{
+    padding: 1%;
+    box-sizing: border-box;
+}
+#music-player2{
+    width:80%;
+}
+.music-controls{
+    margin: 0 2%;
+}
+#volume2{
     width:50%;
 }
