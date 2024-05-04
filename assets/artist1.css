@@ -22,7 +22,10 @@ body::-webkit-scrollbar{
     display: flex;
     width: 100%;
     background-color: rgba(12, 16, 39, 255);
+    top: 0%;
     padding: 0.5% 0;
+    position: fixed;
+    z-index: 1;
 }
 .bar {
     height: 7.5vh;
@@ -93,7 +96,7 @@ input[type="text"] {
 
 
 #middle-box {
-    margin: 0.5vh;
+    margin: 7.5vh;
     height: fit-content;
 }
 
@@ -116,6 +119,7 @@ input[type="text"] {
 }
 ol .f{
     background-color: rgba(25,30,50,255);
+    width: 98%;
 }
 #artist-image {
     width: 45%;
@@ -151,6 +155,11 @@ ol .f{
 .mt-3{
     margin-top: 3%;
 }
+.song-box3{
+    opacity: 0.7;
+    height: 6vh;
+    width: 6vh;
+}
 #gradient-box{
     height: 5vh;
     background-image: linear-gradient(90deg, rgba(77,42,184,255),rgba(185,69,220,255));
@@ -166,7 +175,22 @@ li{
     position:relative;
     margin-bottom: 2%;
 }
-
+.play{
+    position: absolute;
+    left: 9%;
+    height: 100%;
+    width: 6vh;
+    justify-content: center;
+    align-items: center;
+}
+.play2{
+    position: absolute;
+    left: 6%;
+    height: 100%;
+    width: 6vh;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Right panel */
 #right-section {
@@ -264,9 +288,12 @@ li{
     justify-content: space-around;
     margin: 0px;
     width: 100%;
-    position: relative;
+    position: fixed;
+    bottom: 0%;
 }
-
+.fa-chart-simple{
+    color: rgba(33,119,147,255)
+}
 #left-box {
     width: 15%;
     align-items: center;
@@ -329,6 +356,7 @@ li{
     width: 50%;
 }
 .count{
+    margin-left: 1%;
     display: flex;
     align-items: center;
 }
