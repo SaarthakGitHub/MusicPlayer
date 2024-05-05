@@ -350,7 +350,7 @@ li{
     display: flex;
 }
 
-/* Media Queries */
+/* Media Queries for responsiveness */
 
 @media screen and (max-width: 1245px) {
     #artist-d{

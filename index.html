@@ -13,6 +13,7 @@
   </head>
   <body>
     <div id="outer-box">
+      <!-- NavBar Code -->
       <div id="upper-box">
         <div id="logo" class="d-flex">
           <i class="fa-solid fa-music"></i>
@@ -22,7 +23,9 @@
           <div class="text" style="margin-left: 40%">Studio</div>
         </div>
         <div id="favourite-text" class="text">Favourites</div>
+        <!-- Container for elements on right side of navBar -->
         <div id="right-items" class="d-flex">
+          <!-- To make search bar -->
           <div id="pill" class="d-flex">
             <div class="text"><i class="fa-solid fa-magnifying-glass"></i></div>
             <input type="text" placeholder="search" />
@@ -31,13 +34,18 @@
             </div>
           </div>
           <div class="text"><i class="fa-solid fa-bell"></i></div>
+          <!-- container for profile picture of user -->
           <div id="profile"></div>
         </div>
       </div>
       <div id="middle-box">
+        <!-- 2 aside section - left & right -->
         <aside>
+          <!-- left-section has 7 parts -->
           <div id="left-section" class="d-aside">
+            <!-- Carousel  -->
             <div id="middle-upper" class="d-flex">
+              <!-- different artist id for hovering effect -->
               <div id="artist1" class="b-3 h-3">
                 <img src="./assets/HomeScreen/latino dance club.png" />
               </div>
@@ -66,10 +74,12 @@
                     <div class="date cgrey text">AUG 11, 2017</div>
                   </div>
                   <div class="two-box d-flex">
+                    <!-- Toggler effect using checkbox -->
                     <input type="checkbox" id="check1" />
                     <label for="check1"
                       ><i class="fa-solid fa-ellipsis"></i
                     ></label>
+                    <!-- Each latest release has its own toggeler -->
                     <div id="toggler1" class="box toggler">
                       <p><i class="fa-solid fa-play"></i> Play Now</p>
                       <hr />
@@ -185,7 +195,9 @@
                 </div>
               </div>
             </div>
+            <!-- Clicking on poster of latest release displays music bar -->
             <div id="lower-box2" class="bar d-flex">
+              <!-- music bar is divided in 3 parts -->
               <div id="left-box2" class="d-flex">
                 <div id="display-box2"></div>
                 <div id="text-box2">
@@ -195,8 +207,11 @@
                 <div class="text"><i class="fa-regular fa-heart"></i></div>
                 <div class="text"><i class="fa-solid fa-ban"></i></div>
               </div>
+              <!-- middle part of music player -->
               <div id="midle-box2" class="d-flex">
+                <!-- This is also divided in 2 columns -->
                 <div id="upper-part2" class="d-flex">
+                  <!-- Upper part of music player contains 5 icons -->
                   <div class="text control-icons">
                     <i class="fa-solid fa-shuffle"></i>
                   </div>
@@ -224,31 +239,37 @@
                   </div>
                 </div>
                 <div id="lower-part2" class="d-flex">
+                  <!-- lower part contains slider of selecting specific time in music -->
                   <div class="text">1:39</div>
                   <input id="music-player" type="range" />
                   <div class="text">1:44</div>
                 </div>
               </div>
+              <!-- right part of music player -->
               <div id="right-box2" class="d-flex">
-                <div class="text music-controls">
+                <!-- This contains 4 icons and slider to change music volume -->
+                <div class="text control-icons">
                   <i class="fa-solid fa-list-ul"></i>
                 </div>
-                <div class="text music-controls">
+                <div class="text control-icons">
                   <i class="fa-solid fa-computer"></i>
                 </div>
-                <div class="text music-controls">
+                <div class="text control-icons">
                   <i class="fa-solid fa-volume-high"></i>
                 </div>
                 <input id="volume2" type="range" />
-                <div class="text music-controls">
+                <div class="text control-icons">
                   <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                 </div>
               </div>
             </div>
+            <!-- This Part of left section, contains link to artist information page-->
             <div id="middle-three">
               <div class="text box-heading">Popular Artists</div>
               <div id="circlebox" class="d-flex">
+                <!-- clicking on image of singer will open its profile -->
                 <div class="artist-box">
+                  <!-- This contains artist image as link and name of artist -->
                   <a href="./artist2.html" target="_blank">
                     <img
                       class="hovering"
@@ -332,9 +353,14 @@
                 </div>
               </div>
             </div>
+            <!-- Genre part -->
             <div id="middle-four" class="d-flex">
               <div id="stations"></div>
               <div id="circleboxt" class="d-flex">
+                <!-- Each genre contains a picture and text -->
+                <!-- Each genre has different id for image in background -->
+                <!-- Text has shadow to highlight it -->
+                <!-- .genre-box class places text in the centre of picture -->
                 <div id="genre1" class="genre-box d-flex">
                   <div class="text">Love</div>
                 </div>
@@ -355,13 +381,19 @@
                 </div>
               </div>
             </div>
+            <!-- Different sound based music part -->
             <div id="middle-five" class="d-flex">
+              <!-- postion relative is used to position text on center of container -->
               <div style="position: relative">
+                <!-- Each different id is used to add image -->
+                <!-- .b-3 add dimension to containers  -->
                 <div id="artistimg1" class="b-3"></div>
+                <!-- .larger increase font size -->
                 <div class="text type larger bold">Party</div>
               </div>
               <div style="position: relative">
                 <div id="artistimg2" class="b-3"></div>
+                <!-- .bold boldens the text -->
                 <div class="text type larger bold">Electronic</div>
               </div>
               <div style="position: relative">
@@ -369,9 +401,12 @@
                 <div class="text type larger bold">Road Trip</div>
               </div>
             </div>
+            <!-- middle -six and middle-seven are same section but different heading -->
             <div id="middle-six">
               <div class="text box-heading">Latest English</div>
+              <!-- b-5 sets dimension of container -->
               <div id="english" class="b-5 d-flex">
+                <!-- .e-b sets dimension of each sub-containers -->
                 <div class="e-b">
                   <img src="./assets/HomeScreen/songcover/first.png" />
                   <div class="text">Onism</div>
@@ -399,6 +434,7 @@
                 </div>
               </div>
             </div>
+            <!-- Same with different id -->
             <div id="middle-seven">
               <div class="text box-heading">Latest Hindi</div>
               <div id="hindi" class="b-5 d-flex">
@@ -430,11 +466,14 @@
               </div>
             </div>
           </div>
+          <!-- left section has 2 parts - heading and list -->
           <div id="right-section" class="d-aside">
+            <!-- There are two type in heading - heading and dropdown -->
             <div id="right-head" class="d-flex">
               <div id="first-head">Queue</div>
               <div id="second-head">
                 <select id="drop">
+                  <!-- So that it doesnot appear in options so hidden -->
                   <option selected hidden>Queue</option>
                   <hr />
                   <option>Playlists</option>
@@ -443,13 +482,20 @@
                 </select>
               </div>
             </div>
+            <!-- List of songs -->
             <div id="queue-list">
-              <ol id="queue-box">
+              <ol>
+                <!-- Each list items is divided into 4 parts -->
+                <!-- .song1, .song2, .song3, .song4 contains different song picture -->
                 <li class="d-flex">
+                  <!-- cgrey gives dark gray color to text -->
                   <div class="text cgrey" style="margin-right: 3%">01</div>
+                  <!-- song1 contains image of song and .song-box adds dimensions -->
                   <div class="song1 song-box"></div>
+                  <!-- song-text positions the name of song and its artist -->
                   <div class="two-box song-text">
                     <div class="text">Worry Bout Us</div>
+                    <!-- .t-s decrease size of text -->
                     <div class="text t-s cgrey">Rosie Lowe</div>
                   </div>
                   <div class="heart"><i class="fa-regular fa-heart"></i></div>
@@ -810,6 +856,7 @@
           </div>
         </aside>
       </div>
+      <!-- Exact replica of music bar in left section of #middle-box -->
       <div id="lower-box" class="bar d-flex">
         <div id="left-box" class="d-flex">
           <div id="display-box"></div>
@@ -852,17 +899,17 @@
           </div>
         </div>
         <div id="right-box" class="d-flex">
-          <div class="text music-controls">
+          <div class="text control-icons">
             <i class="fa-solid fa-list-ul"></i>
           </div>
-          <div class="text music-controls">
+          <div class="text control-icons">
             <i class="fa-solid fa-computer"></i>
           </div>
-          <div class="text music-controls">
+          <div class="text control-icons">
             <i class="fa-solid fa-volume-high"></i>
           </div>
           <input id="volume" type="range" />
-          <div class="text music-controls">
+          <div class="text control-icons">
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
         </div>

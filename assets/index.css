@@ -1,17 +1,13 @@
-.box{
-    border: 1px solid white;
-    
-    color: white;
-}
 body{
     margin: 0;
     background-color: rgba(12,16,39,255);
     color: white;
-    overflow-x: hidden;
 }
+/* Hide scrollbar */
 body::-webkit-scrollbar{
     display: none;
 }
+/* Format link text */
 a{
     text-decoration: none;
     color: white;
@@ -25,6 +21,7 @@ a{
     display: flex;
     flex-direction: column; 
 }
+/* navBar / upperbox */
 #upper-box{
     display: flex;
     position: fixed;
@@ -33,11 +30,6 @@ a{
     width: 100%;
     height: 7%;
 }
-.bar{
-    margin: 0.5vh;
-    height: 7.5vh;
-    
-}
 #logo{
     border-radius: 50%;
     margin-left: 5vw;
@@ -45,6 +37,7 @@ a{
     justify-content: center;
     align-items: center;
 }
+/* Increases size of logo */
 #logo i{
     font-size: 225%;
 }
@@ -52,13 +45,6 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:fit-content;
-    background-color: transparent;
 }
 #favourite-text{
     margin-left: 5vw;
@@ -78,13 +64,13 @@ a{
     padding-left:1%;
     background-color: rgba(18,25,62,255);
 }
-#pill i{
-    color: white;
-}
 input{
     background-color: transparent;
     border: none;
     height: 85%;
+}
+input[type="text"]{
+    width: 60%;
 }
 #profile{
     border-radius: 50%;
@@ -92,9 +78,6 @@ input{
     width: 2.75em;
     background-image: url(./profile.avif);
     background-size: contain;
-}
-input[type="text"]{
-    width: 60%;
 }
 
 /* Middle box */
@@ -112,8 +95,8 @@ input[type="text"]{
 
 #left-section{
     width: 70%;
-    overflow: scroll;
 }
+/* Hides scroll bar */
 #left-section::-webkit-scrollbar{
     display: none;
 }
@@ -132,6 +115,7 @@ input[type="text"]{
     width: 100%;
     height: 100%;
 }
+/* Hovering effect of carousel */
 #artist1:hover{
     transform: scale(125%);
 }
@@ -147,7 +131,6 @@ input[type="text"]{
 #artist3:hover{
     transform: scale(125%);
 }
-
 #middle-two{
     height: 45vh;
 }
@@ -156,6 +139,7 @@ input[type="text"]{
     font-weight: 600;
     font-size: 1.2em;
 }
+/* To display it in different lines */
 #f-box{
     flex-wrap: wrap;
     height: 82%;
@@ -176,11 +160,20 @@ input[type="text"]{
     width: 100%;
     height: 90%;
 }
+/* hovering effect on latest release images */
 .latest-rel:hover{
     opacity: 0.6;
 }
 .latest-rel:hover ~ .play2{
     display: flex;
+}
+/* Two classes play and play2 for different positioning */
+.play{
+    position: absolute;
+    top:-245%;
+    left: 45%;
+    z-index: -1;
+    opacity: 1;
 }
 .play2{
     position: absolute;
@@ -188,21 +181,17 @@ input[type="text"]{
     left: 35%;
     display:none;
 }
-.larger{
-    font-size: 2rem;
-}
-.mt-2{
-    margin-top: 2%;
-}
 div.two-box.d-flex{
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
     right: 2%;
 }
+/* input having type as checkbox */
 input[type="checkbox"]{
     display: none;
 }
+/* on clicking idfferent checkbox different toggler will open */
 #check1:checked ~ #toggler1{
     display: block;
 }
@@ -215,12 +204,18 @@ input[type="checkbox"]{
 #check4:checked ~ #toggler4{
     display: block;
 }
+.toggler{
+    width: max-content;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display:none;
+    color: black;
+}
 #toggler1{
     top: 65%;
 }
 #toggler2{
     top: 65%;
-
 }
 #toggler3{
     top: 65%;
@@ -230,259 +225,8 @@ input[type="checkbox"]{
     top: 65%;
     z-index: 1;
 }
-.toggler{
-    width: max-content;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    display:none;
-    color: black;
-}
-#middle-three{
-    margin-top: 0.5vh;
-    height: 23vh;
-    margin-bottom: 1vh;
-}
-#circlebox{
-    width: 99%;
-    margin: 0.5vh;
-    height: 17vh;
-    justify-content: space-between;
-}
-.artist-box{
-    width: 17vh;
-    border-radius: 50%;
-    height: 80%;
-}
-.hovering:hover{
-    z-index: -2;
-    opacity: 0.4;
-}
-.play{
-    position: absolute;
-    top:-245%;
-    left: 45%;
-    z-index: -1;
-    opacity: 1;
-}
-.artist-box a{
-    width: inherit;
-    border-radius: inherit;
-    position: relative;
-}
-.artist-box img{
-    width: inherit;
-    height: 100%;
-    border-radius: inherit;
-}
-#middle-four{
-    height: 20vh;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(16,22,66,255);
-}  
-#circleboxt{
-    width: 99%;
-    height: 65%;
-    justify-content: space-between;
-}
-#stations{
-    margin: 1vh;
-    height: 90%;
-    width: 17%;
-    background-image: url(./HomeScreen/genre/stations.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.genre-box{
-    width: 15%;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-}
-.genre-box div{
-    opacity: 1;
-    color: #000000;
-    text-shadow:2px 1px 1px rgb(255, 255, 255);
-}
-#genre1{
-    background-image: url(./HomeScreen/genre/love.jpeg);
-    background-size: contain;
-}
-#genre2{
-    background-image: url(./HomeScreen/genre/retro.jpeg);
-    background-size: contain;
-}
-#genre3{
-    background-image: url(./HomeScreen/genre/chill.jpeg);
-    background-size: contain;
-}
-#genre4{
-    background-image: url(./HomeScreen/genre/workout.png);
-    background-size: contain;
-}
-#genre5{
-    background-image: url(./HomeScreen/genre/rock.jpeg);
-    background-size: contain;
-}
-#genre6{
-    background-image: url(./HomeScreen/genre/pop.jpeg);
-    background-size: contain;
-}
-#genre1{
-    background-image: url(./HomeScreen/genre/love.jpeg);
-    background-size: contain;
-}
-#middle-five{
-    margin-top: 2.5%;
-    height: 20vh;
-    justify-content: space-between;
-}
-#artistimg1{
-    background-image: url("./HomeScreen/party.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease-in-out;
-}
-#artistimg1:hover{
-    background-size: 125%;
-    opacity: 0.5;
-}
-#artistimg2{
-    background-image: url("./HomeScreen/electronic.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease-in-out;
-}
-#artistimg2:hover{
-    background-size: 125%;
-    opacity: 0.5;
-}
-#artistimg3{
-    background-image: url("./HomeScreen/road\ trip.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease-in-out;
-}
-#artistimg3:hover{
-    background-size: 125%;
-    opacity: 0.5;
-}
 
-.bold{
-    font-weight: bolder;
-}
-.type{
-    position: absolute;
-    top: 40%;
-    left: 35%;
-}
-.b-5{
-    height: 25vh;
-    justify-content: space-between;
-    margin-bottom: 0.5vh;
-}
-.date{
-    font-size: smaller;
-}
-.e-b{
-    width: 17.5%;
-}
-.e-b img{
-    width: 100%;
-    height: 65%;
-}
-.club{
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-}
-/* right-section */
-
-#right-section{
-    width: 29%;
-}
-#right-head{
-    justify-content: space-between;
-    height: 6vh;
-    align-items: flex-end;
-}
-#first-head{
-    width: 35%;
-    font-size: 2rem;
-    font-weight: 800;
-}
-#second-head{
-    height: 50%;
-    width: 16%;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-select{
-    background-color: transparent;
-    color: rgba(76,215,184,255);
-    width:100%;
-    border: none;
-}
-option{
-    color:black;
-}
-#arrow{
-    transform: rotate(90deg);
-}
-#queue-list{
-    margin-top: 2vh;
-    overflow: scroll;
-    height: 100vh;
-
-}
-#queue-list::-webkit-scrollbar{
-    display: none;
-}
-.cgrey{
-    color:darkgrey
-}
-.t-s{
-    font-size: smaller;
-}
-li{
-    position:relative;
-    align-items: center;
-    margin: 2vh;
-}
-.song-box{
-    height:6vh;
-    width:6vh;
-}
-.song1{
-    background-image: url(./HomeScreen/songcover/first.png);
-    background-size: contain;
-}
-.song2{
-    background-image: url(./HomeScreen/songcover/2.png);
-    background-size: contain;
-}
-.song3{
-    background-image: url(./HomeScreen/songcover/3.png);
-    background-size: contain;
-}
-.song4{
-    background-image: url(./HomeScreen/songcover/4.png);
-    background-size: contain;
-}
-.song-text{
-    position:absolute;
-    left: 23%;
-}
-.heart{
-    position: absolute;
-    right: -1vw;
-    height: 3vh;
-    width: 2vw;
-}
-
-/* Lower bar */
+/* Dynamic music player */
 #lower-box2{
     background-color: rgba(40,40,40,255);
     justify-content: space-around;
@@ -496,61 +240,6 @@ li{
 #lower-box2:target{
     display: flex;
 }
-#lower-box{
-    background-color: rgba(40,40,40,255);
-    justify-content: space-around;
-    margin: 0px;
-    width: 100%;
-}
-#left-box{
-    width: 15%;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(40,40,40,255);
-}
-#midle-box{
-    width: 40vw;
-    align-items: center;
-    flex-direction: column;
-}
-#right-box{
-    width: 20%;
-    align-items: center;
-    background-color: rgba(40,40,40,255);
-}
-#display-box{
-    height:2em;
-    width:2em;
-    background-image: url(./HomeScreen/john\ lenon);
-    background-size: contain;
-}
-#upper-part, #lower-part{
-    width:100%;
-    height: 50%;
-    background-color: rgba(40,40,40,255);
-}
-#upper-part{
-    margin-top: 0.5%;
-    justify-content: center;
-}
-.control-icons{
-    margin: 0 2%;
-}
-#lower-part{
-    padding: 1%;
-    box-sizing: border-box;
-}
-#music-player{
-    width:80%;
-}
-.music-controls{
-    margin: 0 2%;
-}
-#volume{
-    width:50%;
-}
-
-
 #left-box2{
     width: 15%;
     height: 100%;
@@ -599,3 +288,330 @@ li{
 #volume2{
     width:50%;
 }
+
+
+
+
+#middle-three{
+    margin-top: 0.5vh;
+    height: 23vh;
+    margin-bottom: 1vh;
+}
+/* two circle box having different properties */
+#circlebox{
+    width: 99%;
+    margin: 0.5vh;
+    height: 17vh;
+    justify-content: space-between;
+}
+#circleboxt{
+    width: 99%;
+    height: 65%;
+    justify-content: space-between;
+}
+.artist-box{
+    width: 17vh;
+    border-radius: 50%;
+    height: 80%;
+}
+/* Class adding hovering effect on artists */
+.hovering:hover{
+    z-index: -2;
+    opacity: 0.4;
+}
+.artist-box a{
+    width: inherit;
+    border-radius: inherit;
+    position: relative;
+}
+.artist-box img{
+    width: inherit;
+    height: 100%;
+    border-radius: inherit;
+}
+#middle-four{
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(16,22,66,255);
+}  
+#stations{
+    margin: 1vh;
+    height: 90%;
+    width: 17%;
+    background-image: url(./HomeScreen/genre/stations.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.genre-box{
+    width: 15%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.genre-box div{
+    opacity: 1;
+    color: #000000;
+    text-shadow:2px 1px 1px rgb(255, 255, 255);
+}
+/* Each genre have different background image */
+#genre1{
+    background-image: url(./HomeScreen/genre/love.jpeg);
+    background-size: contain;
+}
+#genre2{
+    background-image: url(./HomeScreen/genre/retro.jpeg);
+    background-size: contain;
+}
+#genre3{
+    background-image: url(./HomeScreen/genre/chill.jpeg);
+    background-size: contain;
+}
+#genre4{
+    background-image: url(./HomeScreen/genre/workout.png);
+    background-size: contain;
+}
+#genre5{
+    background-image: url(./HomeScreen/genre/rock.jpeg);
+    background-size: contain;
+}
+#genre6{
+    background-image: url(./HomeScreen/genre/pop.jpeg);
+    background-size: contain;
+}
+#genre1{
+    background-image: url(./HomeScreen/genre/love.jpeg);
+    background-size: contain;
+}
+#middle-five{
+    margin-top: 2.5%;
+    height: 20vh;
+    justify-content: space-between;
+}
+/* Each artistimg id have different image  */
+#artistimg1{
+    background-image: url("./HomeScreen/party.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* Transition on hovering */
+    transition: all 0.5s ease-in-out;
+}
+/* On hovering background size increases */
+#artistimg1:hover{
+    background-size: 125%;
+    opacity: 0.5;
+}
+#artistimg2{
+    background-image: url("./HomeScreen/electronic.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+}
+#artistimg2:hover{
+    background-size: 125%;
+    opacity: 0.5;
+}
+#artistimg3{
+    background-image: url("./HomeScreen/road\ trip.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+}
+#artistimg3:hover{
+    background-size: 125%;
+    opacity: 0.5;
+}
+.e-b img{
+    width: 100%;
+    height: 65%;
+}
+.club{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* right-section */
+
+#right-section{
+    width: 29%;
+}
+#right-head{
+    justify-content: space-between;
+    height: 6vh;
+    align-items: flex-end;
+}
+#first-head{
+    width: 35%;
+    font-size: 2rem;
+    font-weight: 800;
+}
+#second-head{
+    height: 50%;
+    width: 16%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+select{
+    background-color: transparent;
+    color: rgba(76,215,184,255);
+    width:100%;
+    border: none;
+}
+option{
+    color:black;
+}
+#queue-list{
+    margin-top: 2vh;
+    overflow: scroll;
+    height: 100vh;
+}
+/* hidding scrollbar */
+#queue-list::-webkit-scrollbar{
+    display: none;
+}
+li{
+    position:relative;
+    align-items: center;
+    margin: 2vh;
+}
+.song-box{
+    height:6vh;
+    width:6vh;
+}
+/* .song1, .song2, .song3, .song4 has different background image */
+.song1{
+    background-image: url(./HomeScreen/songcover/first.png);
+    background-size: contain;
+}
+.song2{
+    background-image: url(./HomeScreen/songcover/2.png);
+    background-size: contain;
+}
+.song3{
+    background-image: url(./HomeScreen/songcover/3.png);
+    background-size: contain;
+}
+.song4{
+    background-image: url(./HomeScreen/songcover/4.png);
+    background-size: contain;
+}
+.song-text{
+    position:absolute;
+    left: 23%;
+}
+.heart{
+    position: absolute;
+    right: -1vw;
+    height: 3vh;
+    width: 2vw;
+}
+
+
+/* Lower bar */
+
+
+#lower-box{
+    background-color: rgba(40,40,40,255);
+    justify-content: space-around;
+    margin: 0px;
+    width: 100%;
+}
+.bar{
+    margin: 0.5vh;
+    height: 7.5vh; 
+}
+#left-box{
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(40,40,40,255);
+}
+#midle-box{
+    width: 40vw;
+    align-items: center;
+    flex-direction: column;
+}
+#right-box{
+    width: 20%;
+    align-items: center;
+    background-color: rgba(40,40,40,255);
+}
+#display-box{
+    height:2em;
+    width:2em;
+    background-image: url(./HomeScreen/john\ lenon);
+    background-size: contain;
+}
+#upper-part, #lower-part{
+    width:100%;
+    height: 50%;
+    background-color: rgba(40,40,40,255);
+}
+#upper-part{
+    margin-top: 0.5%;
+    justify-content: center;
+}
+#lower-part{
+    padding: 1%;
+    box-sizing: border-box;
+}
+#music-player{
+    width:80%;
+}
+#volume{
+    width:50%;
+}
+
+
+
+/* General classes */
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    background-color: transparent;
+}
+.larger{
+    font-size: 2rem;
+}
+.mt-2{
+    margin-top: 2%;
+}
+.bold{
+    font-weight: bolder;
+}
+.type{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+.b-5{
+    height: 25vh;
+    justify-content: space-between;
+    margin-bottom: 0.5vh;
+}
+.date{
+    font-size: smaller;
+}
+.e-b{
+    width: 17.5%;
+}
+.cgrey{
+    color:darkgrey
+}
+.t-s{
+    font-size: smaller;
+}
+.control-icons{
+    margin: 0 2%;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
