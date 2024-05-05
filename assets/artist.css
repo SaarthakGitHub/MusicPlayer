@@ -358,12 +358,7 @@ li{
     }
 }
 @media screen and (max-width: 840px) {
-    body{
-        color: rgb(0, 0, 0);
-        background-color: whitesmoke;
-    }
     #upper-box{
-        color: white;
         overflow-x: scroll;
     }
     #app-name{
@@ -388,24 +383,14 @@ li{
         height:1vh;
     }
     #right-section::-webkit-scrollbar-track, #left-section::-webkit-scrollbar-track{
-        background: gray;
+        background: white;
     }
     #right-section::-webkit-scrollbar-thumb, #left-section::-webkit-scrollbar-thumb{
-        background: black;
+        background: gray;
     }
 
     ol .f{
-        background-color: gray;
         min-width: 488.85px;
-    }
-    #artist-display{
-        background-color: gray;
-    }
-    .sec-color{
-        color: black;
-    }
-    #lower-box{
-        color:white;
     }
 }
 @media screen and (max-width:500px){
