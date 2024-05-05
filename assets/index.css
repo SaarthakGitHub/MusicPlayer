@@ -171,25 +171,22 @@ input[type="text"]{
     position: relative;
     width: 25%;
 }
-.poster a img:hover{
-    z-index: -2;
-    opacity: 0.6;
-}
-.posterPic img{
+.latest-rel{
     position: relative;
     width: 100%;
     height: 90%;
 }
-.posterPic img:hover{
-    z-index: -2;
+.latest-rel:hover{
     opacity: 0.6;
 }
-
+.latest-rel:hover ~ .play2{
+    display: flex;
+}
 .play2{
     position: absolute;
-    top: 42%;
-    left: 10%;
-    z-index: -1;
+    top: 35%;
+    left: 35%;
+    display:none;
 }
 .larger{
     font-size: 2rem;
