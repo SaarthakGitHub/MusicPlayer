@@ -124,6 +124,10 @@ input[type="text"] {
 }
 #artist-d{
     margin-top: -8%;
+    overflow: scroll;
+}
+#artist-d::-webkit-scrollbar{
+    display: none;
 }
 #artist-inner-box {
     height: 80%;
@@ -344,4 +348,71 @@ li{
 }
 .d-flex {
     display: flex;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1245px) {
+    #artist-d{
+        margin-top: 0%;
+    }
+}
+@media screen and (max-width: 840px) {
+    body{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+    }
+    #upper-box{
+        color: white;
+        overflow-x: scroll;
+    }
+    #app-name{
+        margin-left: 3%;
+    }
+    #right-items{
+        left:13vh;
+        min-width: 174.8px;
+    }
+    #upper-aside{
+        min-width: 187.66px;
+    }
+    ol li.d-flex{
+        min-width: 177.22px;
+    }
+    #right-section, #left-section{
+        overflow-x: scroll;
+    }    
+    #right-section::-webkit-scrollbar, #left-section::-webkit-scrollbar{
+        display: block;
+        width:1vh;
+        height:1vh;
+    }
+    #right-section::-webkit-scrollbar-track, #left-section::-webkit-scrollbar-track{
+        background: gray;
+    }
+    #right-section::-webkit-scrollbar-thumb, #left-section::-webkit-scrollbar-thumb{
+        background: black;
+    }
+
+    ol .f{
+        background-color: gray;
+        min-width: 488.85px;
+    }
+    #artist-display{
+        background-color: gray;
+    }
+    .sec-color{
+        color: black;
+    }
+    #lower-box{
+        color:white;
+    }
+}
+@media screen and (max-width:500px){
+    #left-section{
+        width: 100%;
+    }
+    #right-section{
+        width: 100%;
+    }
 }
