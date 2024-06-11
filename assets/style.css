@@ -75,24 +75,27 @@ input{
     transform: translateX(30px);
 }
 #checkbox:checked + #toggle-container{
-    background-color: var(--cardColor);
+    background-color: lightgray;
 }
 .heading-container{
     width: 98.5vw;
     height: 10vh;
 }
-/* #genre-list{
-    color: var(--)
-} */
-
+.changeColor{
+    color: var(--textColor) !important;
+}
+#song-name:hover, #artist-name:hover{
+    color: white;
+}
 #left:hover, #right:hover{
     cursor: pointer;
 }
 #currPlaylist{
     height: fit-content;
-    /* overflow-y: scroll; */
 }
-
+#playName{
+    background-color: var(--bgColor);
+}
 
 
 

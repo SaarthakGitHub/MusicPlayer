@@ -304,12 +304,34 @@ function update(id){
     currentSongIndex = songQueue.length-1;
 }
 
-const mode = document.getElementById('checkbox');
-mode.addEventListener('change', () => {
-    console.log(document.getElementById('mode').textContent);
+const toggleMode = () => {
+    // console.log(document.getElementById('mode').textContent);
+    const root = document.documentElement;
     if(document.getElementById('mode').textContent === 'Dark'){
+        //backgroundcolor = rgba(232,231,230,255);
+        // cardColor = rgba(107,184,222,255);
+        // contrastColor = rgba(5,115,171,255)
+        // textColor = black;
         document.getElementById('mode').textContent = 'Light';
-    }else{
-        document.getElementById('mode').textContent = 'Dark';
+        document.getElementById('toggle-container').style.backgroundColor = 'rgba(5,115,171,255)';
+        root.style.setProperty('--bgColor','rgba(86,86,87,255)');
+        root.style.setProperty('--cardColor','rgba(38,50,56,255)');
+        root.style.setProperty('--contrastColor','rgba(100,105,108,255)');
+        root.style.setProperty('--textColor','rgb(255,255,255)');
+        }else{
+            //backgroundcolor = rgba(86,86,87,255)
+            // cardColor = rgba(38,50,56,255)
+            // contrastColor = rgba(100,105,108,255)
+            // textColor = white;
+            document.getElementById('mode').textContent = 'Dark';
+            document.getElementById('toggle-container').style.backgroundColor = 'lightgray';
+            root.style.setProperty('--bgColor','rgba(232,231,230,255)');
+            root.style.setProperty('--cardColor','rgba(107,184,222,255)');
+            root.style.setProperty('--contrastColor','rgba(5,115,171,255)');
+            root.style.setProperty('--textColor','rgb(0,0,0)');
+
     }
-})
+    };
+
+    const mode = document.getElementById('checkbox');
+    mode.addEventListener('change', toggleMode);
