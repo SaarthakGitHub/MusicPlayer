@@ -304,3 +304,12 @@ function update(id){
     currentSongIndex = songQueue.length-1;
 }
 
+const mode = document.getElementById('checkbox');
+mode.addEventListener('change', () => {
+    console.log(document.getElementById('mode').textContent);
+    if(document.getElementById('mode').textContent === 'Dark'){
+        document.getElementById('mode').textContent = 'Light';
+    }else{
+        document.getElementById('mode').textContent = 'Dark';
+    }
+})

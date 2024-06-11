@@ -2,7 +2,7 @@
     --bgColor: rgba(232,231,230,255);
     --cardColor: rgba(107,184,222,255);
     --contrastColor: rgba(5,115,171,255);
-    --textColor: white;
+    --textColor: black;
 }
 p{
     display: inline-block;
@@ -29,7 +29,7 @@ input{
     width: 98.5vw;
     height: 5vh;
     position: relative;
-    color: var(--textColor)
+    color: white;
 }
 #checkbox{
     display: none;
@@ -57,7 +57,7 @@ input{
 }
 #genre-list p, #currPlaylist p, #playlists p{
     background-color: var(--contrastColor);
-    color: var(--textColor);
+    color: white;
     height: 100%;
     width: 100%;
     margin: 0 0 10px;
@@ -100,12 +100,12 @@ input{
 
 .cards{
     width: 98.5vw;
-    /* height: 83.4vh; */
+    height: 110vh;
     display: flex;
 }
 #card1{
     flex-grow: 2;
-    height: inherit;
+    /* height: inherit; */
     width: 20vw;
     padding-left: 25px;
 }
@@ -121,7 +121,7 @@ select{
 
 #card2{
     flex-grow: 1;
-    height: inherit;
+    /* height: inherit; */
     width: 40vw;
     margin: 0px 25px;
 }
@@ -129,7 +129,7 @@ select{
     margin: 5%;
     padding: 5% 4% 0;
     border-radius: 20px;
-    height: 70%;
+    height: 65%;
     background-color: var(--contrastColor);
 }
 #song-image{
@@ -140,13 +140,14 @@ select{
     width: 15%;
     margin-bottom: 3%;
     font-weight: bold;
-    color: var(--textColor)
+    color: white;
 }
 
 
 #card{
     flex-grow: 2;
     width: 30vw;
+    /* height: inherit; */
 }
 #card3{
     margin-top: 10px;
