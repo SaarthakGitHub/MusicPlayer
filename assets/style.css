@@ -84,7 +84,7 @@ input{
 .changeColor{
     color: var(--textColor) !important;
 }
-#song-name:hover, #artist-name:hover{
+#song-display:hover{
     color: white;
 }
 #left:hover, #right:hover{
@@ -96,8 +96,9 @@ input{
 #playName{
     background-color: var(--bgColor);
 }
-
-
+#playlists:hover p{
+    background-color: var(--cardColor);
+}
 
 
 

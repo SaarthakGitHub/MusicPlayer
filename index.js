@@ -88,8 +88,7 @@ function populateGenre(){
         listItem.textContent=`${song.name} - ${song.artist}`;
         list.appendChild(listItem);
         listItem.addEventListener('click', () => {
-            songQueue.push(song.id);
-            currentSongIndex = songQueue.length-1;
+            update(song.id);
             playSong();
         });
         });
@@ -103,8 +102,7 @@ function populateGenre(){
         listItem.textContent=`${song.name} - ${song.artist}`;
         list.appendChild(listItem);
         listItem.addEventListener('click', () => {
-            songQueue.push(song.id);
-            currentSongIndex = songQueue.length-1;
+            update(song.id);
             playSong();
         });
         });
@@ -118,8 +116,7 @@ function populateGenre(){
         listItem.textContent=`${song.name} - ${song.artist}`;
         list.appendChild(listItem);
         listItem.addEventListener('click', () => {
-            songQueue.push(song.id);
-            currentSongIndex = songQueue.length-1;
+            update(song.id);
             playSong();
         });
         });
@@ -134,8 +131,7 @@ function populateGenre(){
         listItem.textContent=`${song.name} - ${song.artist}`;
         list.appendChild(listItem);
         listItem.addEventListener('click', () => {
-            songQueue.push(song.id);
-            currentSongIndex = songQueue.length-1;
+            update(song.id);
             playSong();
         });
         });
@@ -256,6 +252,7 @@ function renderPlayListsName(){
     playlistName.map((playl) => {
         const listItem = document.createElement('p');
         listItem.textContent=playl;
+        listItem.className = 'mouseover'
         listItem.addEventListener('click', () => {
             currPlaylist = listItem.textContent;
             renderPlaylistSong(listItem.textContent);
