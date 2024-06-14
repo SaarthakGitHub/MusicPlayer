@@ -8,16 +8,19 @@
 </head>
 <body>
     <div class="topbar">
+        <ToggleTheme>
         <input type="checkbox" id="checkbox">
         <label for="checkbox" id="toggle-container">
             <div id="toggler"></div>
             <p id="mode">Dark</p>
         </label>
+    </ToggleTheme>
     </div>
     <div class="heading-container">
         <center><h1 class="changeColor">Music Player</h1></center>
     </div>
     <div class="cards">
+        <AllSongs>
         <div id="card1" class="card">
             <p class="changeColor">Filter By Genre:</p>
             <select id="dropdown">
@@ -29,19 +32,22 @@
             <h2 class="changeColor">All Songs</h2>
             <div id="genre-list"></div>
         </div>
+        </AllSongs>
         <div id="card2" class="card">
+            <SongCard>
             <div id="song-display">
                 <img id="song-image" src="assets\SongsDisplay\animal.jpg">
                 <h1 id="song-name">Animal</h1>
                 <h2 id="artist-name">Maroon V</h2>
             </div>
+        </SongCard>
             <center>
             <div id="audio">
                 <audio id="audio-bar" src="assets\Songs\Maroon-5(PaglaSongs).mp3" controls></audio>
             </div>
             <br>
-            <button id="left" class="changeBtn"><=</button>
-            <button id="right" class="changeBtn">=></button>
+            <button id="left" class="changeBtn">Previous</button>
+            <button id="right" class="changeBtn">Next</button>
         </center>
             <center>
             <button class="changeBtn" id="add" style="height: 3%">Add to Playlist</button>
@@ -50,12 +56,14 @@
         <div id="card">
             <input type="text" id="playName" placeholder="Enter Playlist Name">
             <button type="button" id="create">Create Playlist</button>
+            <Playlist>
             <div id="card3" class="card">
                 <h2 class="changeColor">Current Playlist</h2>
                 <div id="currPlaylist"></div>
                 <h2 class="changeColor">All Playlist</h2>
                 <div id="playlists"></div>
             </div>
+            </Playlist>
         </div>
     </div>
     <script src="index.js"></script>

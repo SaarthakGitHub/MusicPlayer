@@ -75,9 +75,9 @@ let songs = [
 let playlist = {};
 let currentSongIndex = 0;
 let songQueue = [1];
-populateGenre();
-document.getElementById('dropdown').addEventListener('change', populateGenre);
-function populateGenre(){
+showSongs();
+document.getElementById('dropdown').addEventListener('change', showSongs);
+function showSongs(){
     const dropdownValue = document.getElementById('dropdown').value;
     const list = document.getElementById('genre-list');
     list.innerHTML = '';
@@ -89,7 +89,7 @@ function populateGenre(){
         list.appendChild(listItem);
         listItem.addEventListener('click', () => {
             update(song.id);
-            playSong();
+            renderCurrentSong();
         });
         });
     } else if(dropdownValue === 'pop'){
@@ -103,7 +103,7 @@ function populateGenre(){
         list.appendChild(listItem);
         listItem.addEventListener('click', () => {
             update(song.id);
-            playSong();
+            renderCurrentSong();
         });
         });
     } else if(dropdownValue === 'hiphop'){
@@ -117,7 +117,7 @@ function populateGenre(){
         list.appendChild(listItem);
         listItem.addEventListener('click', () => {
             update(song.id);
-            playSong();
+            renderCurrentSong();
         });
         });
 
@@ -132,7 +132,7 @@ function populateGenre(){
         list.appendChild(listItem);
         listItem.addEventListener('click', () => {
             update(song.id);
-            playSong();
+            renderCurrentSong();
         });
         });
 
@@ -140,7 +140,7 @@ function populateGenre(){
 }
 
 
-function playSong(){
+function renderCurrentSong(){
     // console.log('clicked');
     // console.log(songQueue);
     // console.log(currentSongIndex);
@@ -204,7 +204,7 @@ btn1.addEventListener('click', () => {
     }
     currentSongIndex--;
     songQueue.push(songQueue[currentSongIndex]);
-    playSong();
+    renderCurrentSong();
 });
 
 const btn2 = document.getElementById('right');
@@ -214,7 +214,7 @@ btn2.addEventListener('click', () => {
     }
     currentSongIndex++;
     songQueue.push(songQueue[currentSongIndex]);
-    playSong();
+    renderCurrentSong();
 })
 
 
@@ -223,16 +223,19 @@ btn2.addEventListener('click', () => {
 // Playlist codes
 let currPlaylist = null;
 const play = document.getElementById('create');
-play.addEventListener('click', () => {
+play.addEventListener('click', createPlaylist);
+
+
+const createPlaylist= () => {
     const playListName = document.getElementById('playName').value;
     if(!playListName){
         alert('Enter a valid playlist name');
     } else{
         playlist[playListName] = [];
         renderPlayButton();
-        renderPlayListsName();
+        addtoPlaylist();
     }
-})
+}
 function renderPlayButton(){
     const btn = document.getElementById('add');
     if(Object.keys(playlist).length === 0){
@@ -245,7 +248,7 @@ function renderPlayButton(){
 }
 renderPlayButton();
 
-function renderPlayListsName(){
+function addtoPlaylist(){
     const play = document.getElementById('playlists');
     play.innerHTML= '';
     const playlistName = Object.keys(playlist);
@@ -275,7 +278,7 @@ function renderPlaylistSong(playlistName){
         renderComp.appendChild(listItem);
         listItem.addEventListener('click', () => {
             update(song.id);
-            playSong();
+            renderCurrentSong();
         });
     })
 } 
@@ -301,7 +304,7 @@ function update(id){
     currentSongIndex = songQueue.length-1;
 }
 
-const toggleMode = () => {
+const toggleTheme = () => {
     // console.log(document.getElementById('mode').textContent);
     const root = document.documentElement;
     if(document.getElementById('mode').textContent === 'Dark'){
@@ -331,4 +334,4 @@ const toggleMode = () => {
     };
 
     const mode = document.getElementById('checkbox');
-    mode.addEventListener('change', toggleMode);
+    mode.addEventListener('change', toggleTheme);
